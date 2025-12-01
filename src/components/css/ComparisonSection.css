@@ -1,0 +1,128 @@
+
+.comparison-section {
+    background:
+            radial-gradient(ellipse 60% 40% at 30% 50%, rgba(34, 211, 142, 0.04), transparent 50%),
+            radial-gradient(ellipse 60% 40% at 70% 50%, rgba(239, 68, 68, 0.03), transparent 50%),
+            var(--ifm-background-color);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-8);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.comparison-column {
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    transition:
+            transform var(--transition-normal),
+            box-shadow var(--transition-normal);
+}
+
+.comparison-column:hover {
+    transform: translateY(-4px);
+}
+
+.comparison-column--korus {
+    border-color: rgba(34, 197, 94, 0.3);
+    background: linear-gradient(180deg, rgba(34, 197, 94, 0.05) 0%, transparent 30%),
+    var(--glass-bg);
+}
+
+.comparison-column--korus:hover {
+    box-shadow: 0 16px 48px rgba(34, 197, 94, 0.15), 0 0 40px rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.5);
+}
+
+.comparison-column--old {
+    border-color: rgba(239, 68, 68, 0.2);
+    background: linear-gradient(180deg, rgba(239, 68, 68, 0.03) 0%, transparent 30%),
+    var(--glass-bg);
+}
+
+.comparison-column--old:hover {
+    box-shadow: 0 16px 48px rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.35);
+}
+
+.comparison-column__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-border-muted);
+}
+
+.comparison-column__header h3 {
+    font-size: 1.375rem;
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.comparison-column--korus .comparison-column__header svg {
+    color: #22c55e;
+}
+
+.comparison-column--old .comparison-column__header svg {
+    color: #ef4444;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.comparison-item {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+}
+
+.comparison-item__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    margin-top: 2px;
+}
+
+.comparison-item--positive .comparison-item__icon {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.comparison-item--negative .comparison-item__icon {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+.comparison-item__content strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.comparison-item__content p {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.55;
+    margin: 0;
+}

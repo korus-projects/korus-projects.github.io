@@ -1,0 +1,190 @@
+.section-wrapper {
+    position: relative;
+    padding: var(--space-24) var(--space-4);
+    overflow: hidden;
+}
+
+.section-wrapper.section-dark {
+    background: linear-gradient(180deg,
+        var(--ifm-background-color) 0%,
+        var(--color-surface-elevated) 50%,
+        var(--ifm-background-color) 100%);
+    position: relative;
+}
+
+/* Animated background gradient orbs */
+.section-wrapper.section-dark::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle,
+        rgba(88, 166, 255, 0.08) 0%,
+        transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.6;
+    animation: float-orb-1 20s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.section-wrapper.section-dark::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle,
+        rgba(167, 139, 250, 0.06) 0%,
+        transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    animation: float-orb-2 25s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* Grid pattern overlay for features section */
+.key-features-section {
+    background:
+        linear-gradient(90deg, rgba(88, 166, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(88, 166, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(180deg,
+            var(--ifm-background-color) 0%,
+            var(--color-surface-elevated) 50%,
+            var(--ifm-background-color) 100%);
+    background-size: 50px 50px, 50px 50px, 100% 100%;
+}
+
+.key-features-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(ellipse at center,
+        rgba(88, 166, 255, 0.05) 0%,
+        transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.key-features-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Decorative top border for sections */
+.section-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--color-border-accent) 20%,
+        var(--ifm-color-primary) 50%,
+        var(--color-border-accent) 80%,
+        transparent 100%
+    );
+    opacity: 0.4;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+    position: relative;
+    z-index: 1;
+    animation: fade-in-up 0.6s ease-out;
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes float-orb-1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -40px) scale(1.05);
+    }
+    66% {
+        transform: translate(-20px, 30px) scale(0.95);
+    }
+}
+
+@keyframes float-orb-2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(-30px, 40px) scale(1.03);
+    }
+    66% {
+        transform: translate(20px, -30px) scale(0.97);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 996px) {
+    .section-wrapper {
+        padding: var(--space-16) var(--space-4);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-12);
+    }
+}
+
+@media (max-width: 576px) {
+    .section-wrapper {
+        padding: var(--space-12) var(--space-4);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-10);
+    }
+
+    .section-title::after {
+        width: 40px;
+        bottom: -8px;
+    }
+}
