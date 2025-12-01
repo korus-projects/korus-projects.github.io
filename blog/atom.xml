@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://korus-projects.github.io/blog</id>
+    <title>Korus Framework Blog</title>
+    <updated>2025-12-03T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://korus-projects.github.io/blog"/>
+    <subtitle>Korus Framework Blog</subtitle>
+    <icon>https://korus-projects.github.io/img/logo1.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Korus vs Spring Boot vs Micronaut vs Quarkus]]></title>
+        <id>https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus</id>
+        <link href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus"/>
+        <updated>2025-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A practical comparison of modern Java frameworks — startup time, memory, DI model, and architecture.]]></summary>
+        <content type="html"><![CDATA[<p>Let’s compare the most popular modern Java frameworks.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="startup-time-comparison">Startup Time Comparison<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#startup-time-comparison" class="hash-link" aria-label="Direct link to Startup Time Comparison" title="Direct link to Startup Time Comparison" translate="no">​</a></h2>
+<table><thead><tr><th>Framework</th><th>Startup Time</th></tr></thead><tbody><tr><td>Spring Boot</td><td>1500–2500ms</td></tr><tr><td>Micronaut</td><td>600–1200ms</td></tr><tr><td>Quarkus</td><td>800–1500ms</td></tr><tr><td><strong>Korus</strong></td><td><strong>120–250ms</strong></td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="dependency-injection-model">Dependency Injection Model<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#dependency-injection-model" class="hash-link" aria-label="Direct link to Dependency Injection Model" title="Direct link to Dependency Injection Model" translate="no">​</a></h2>
+<table><thead><tr><th>Framework</th><th>DI Style</th><th>Reflection?</th><th>Compile-Time?</th></tr></thead><tbody><tr><td>Spring Boot</td><td>Runtime DI</td><td>Yes</td><td>Partial</td></tr><tr><td>Micronaut</td><td>Compile-Time DI</td><td>No</td><td>Yes</td></tr><tr><td>Quarkus</td><td>Build-Time DI</td><td>Some</td><td>Mostly</td></tr><tr><td><strong>Korus</strong></td><td><strong>Build-Time DI</strong></td><td><strong>Some</strong></td><td><strong>Mostly</strong></td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-differences">Architecture Differences<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#architecture-differences" class="hash-link" aria-label="Direct link to Architecture Differences" title="Direct link to Architecture Differences" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="spring-boot">Spring Boot<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#spring-boot" class="hash-link" aria-label="Direct link to Spring Boot" title="Direct link to Spring Boot" translate="no">​</a></h3>
+<ul>
+<li class="">Heavy runtime logic</li>
+<li class="">Massive ecosystem</li>
+<li class="">Easiest to use</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="micronaut">Micronaut<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#micronaut" class="hash-link" aria-label="Direct link to Micronaut" title="Direct link to Micronaut" translate="no">​</a></h3>
+<ul>
+<li class="">Build-time friendly</li>
+<li class="">Faster than Spring</li>
+<li class="">Requires extra modules</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="quarkus">Quarkus<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#quarkus" class="hash-link" aria-label="Direct link to Quarkus" title="Direct link to Quarkus" translate="no">​</a></h3>
+<ul>
+<li class="">GraalVM optimized</li>
+<li class="">Build-time profiling</li>
+<li class="">Complex stack</li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="korus">Korus<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#korus" class="hash-link" aria-label="Direct link to Korus" title="Direct link to Korus" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Simpler than Micronaut/Quarkus</strong></li>
+<li class=""><strong>Faster than all of them</strong></li>
+<li class=""><strong>Pure compile-time graph</strong></li>
+<li class=""><strong>Clean Undertow runtime</strong></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="when-to-choose-which">When to choose which?<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#when-to-choose-which" class="hash-link" aria-label="Direct link to When to choose which?" title="Direct link to When to choose which?" translate="no">​</a></h2>
+<table><thead><tr><th>Use Case</th><th>Best Choice</th></tr></thead><tbody><tr><td>Enterprise backend</td><td>Spring Boot</td></tr><tr><td>Serverless</td><td>Korus / Quarkus</td></tr><tr><td>Microservices</td><td>Korus / Micronaut</td></tr><tr><td>CLI apps</td><td>Korus</td></tr><tr><td>AOT native images</td><td>Korus / Quarkus</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-verdict">Final Verdict<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#final-verdict" class="hash-link" aria-label="Direct link to Final Verdict" title="Direct link to Final Verdict" translate="no">​</a></h2>
+<p>Korus is ideal when you want:</p>
+<ul>
+<li class="">Fast startup</li>
+<li class="">Low memory usage</li>
+<li class="">Deterministic DI</li>
+<li class="">Zero reflection runtime</li>
+</ul>
+<p>Korus stands as a <strong>next-generation framework</strong> built for modern Java workloads.</p>]]></content>
+        <author>
+            <name>Vinit Shinde</name>
+            <uri>https://github.com/Vin-it-9</uri>
+        </author>
+        <category label="korus" term="korus"/>
+        <category label="java" term="java"/>
+        <category label="comparison" term="comparison"/>
+        <category label="quarkus" term="quarkus"/>
+        <category label="spring" term="spring"/>
+        <category label="micronaut" term="micronaut"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build-Time Dependency Injection Explained]]></title>
+        <id>https://korus-projects.github.io/blog/build-time-dependency-injection-explained</id>
+        <link href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained"/>
+        <updated>2025-12-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How Korus generates your DI graph at compile time and eliminates reflection completely.]]></summary>
+        <content type="html"><![CDATA[<p>Most Java frameworks use <strong>runtime DI</strong>, where objects are created and wired when the application starts.<br>
+<!-- -->This works — but it's slow, unpredictable, and memory-heavy.</p>
+<p>Korus takes a different approach:</p>
+<blockquote>
+<p><strong>All dependency injection is generated at compile time.</strong></p>
+</blockquote>
+<p>No reflection.<br>
+<!-- -->No proxies.<br>
+<!-- -->No classpath scanning.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-build-time-di">Why Build-Time DI?<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#why-build-time-di" class="hash-link" aria-label="Direct link to Why Build-Time DI?" title="Direct link to Why Build-Time DI?" translate="no">​</a></h2>
+<p>Build-time DI solves three major problems:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="slow-startup"><strong>Slow Startup</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#slow-startup" class="hash-link" aria-label="Direct link to slow-startup" title="Direct link to slow-startup" translate="no">​</a></h3>
+<p>Runtime DI frameworks scan the classpath and perform reflection when the app boots.</p>
+<p>Korus eliminates this entirely.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="hidden-runtime-errors"><strong>Hidden Runtime Errors</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#hidden-runtime-errors" class="hash-link" aria-label="Direct link to hidden-runtime-errors" title="Direct link to hidden-runtime-errors" translate="no">​</a></h3>
+<p>Many DI issues (circular dependencies, missing beans) are discovered only when you run the app.</p>
+<p>Korus validates the entire DI graph <em>at compile time</em>.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="large-memory-footprint"><strong>Large Memory Footprint</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#large-memory-footprint" class="hash-link" aria-label="Direct link to large-memory-footprint" title="Direct link to large-memory-footprint" translate="no">​</a></h3>
+<p>Reflection metadata, runtime registries, proxies — all reduce performance.</p>
+<p>Korus generates <strong>pure Java code</strong> instead.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-korus-generates-the-di-graph">How Korus Generates the DI Graph<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#how-korus-generates-the-di-graph" class="hash-link" aria-label="Direct link to How Korus Generates the DI Graph" title="Direct link to How Korus Generates the DI Graph" translate="no">​</a></h2>
+<p>During compilation, the Korus processor:</p>
+<ol>
+<li class="">Scans your source code</li>
+<li class="">Builds an internal DI model</li>
+<li class="">Sorts beans with a topological algorithm</li>
+<li class="">Generates:<!-- -->
+<ul>
+<li class="">Constructor injection code</li>
+<li class="">Method injection code</li>
+<li class="">Singleton registries</li>
+<li class="">Route metadata</li>
+<li class="">A full <code>KorusMain</code> bootstrap class</li>
+</ul>
+</li>
+</ol>
+<p>Everything is resolved before your application even runs.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="example-generated-code-simplified">Example Generated Code (Simplified)<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#example-generated-code-simplified" class="hash-link" aria-label="Direct link to Example Generated Code (Simplified)" title="Direct link to Example Generated Code (Simplified)" translate="no">​</a></h2>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">KorusBean</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">private</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">KorusBean</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">this</span><span class="token punctuation" style="color:rgb(212, 212, 212)">.</span><span class="token plain">repo </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain"> </span><span class="token function" style="color:rgb(220, 220, 170)">get</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">return</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token plain">repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><br></span></code></pre></div></div>]]></content>
+        <author>
+            <name>Vinit Shinde</name>
+            <uri>https://github.com/Vin-it-9</uri>
+        </author>
+        <category label="korus" term="korus"/>
+        <category label="java" term="java"/>
+        <category label="dependency-injection" term="dependency-injection"/>
+        <category label="build-time" term="build-time"/>
+        <category label="aot" term="aot"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Korus Framework]]></title>
+        <id>https://korus-projects.github.io/blog/introducing-korus-framework</id>
+        <link href="https://korus-projects.github.io/blog/introducing-korus-framework"/>
+        <updated>2025-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new ultra-fast Java framework powered by build-time dependency injection and zero reflection.]]></summary>
+        <content type="html"><![CDATA[<p><strong>Build-Time Dependency Injection for Ultra-Fast Java Applications</strong></p>
+<p>Korus Framework is a modern Java framework designed around one core idea:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="move-everything-possible-to-compile-time"><strong>Move everything possible to compile time.</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#move-everything-possible-to-compile-time" class="hash-link" aria-label="Direct link to move-everything-possible-to-compile-time" title="Direct link to move-everything-possible-to-compile-time" translate="no">​</a></h3>
+<p>Reflection, classpath scanning, proxies, and runtime bean creation all slow down traditional Java frameworks. Korus eliminates all of them by generating:</p>
+<ul>
+<li class="">Dependency wiring</li>
+<li class="">DI registries</li>
+<li class="">Routing metadata</li>
+<li class="">Bootstrapping code</li>
+</ul>
+<p><strong>during compilation</strong>, not at runtime.</p>
+<p>The result:</p>
+<ul>
+<li class=""><strong>120–250 ms startup time</strong></li>
+<li class=""><strong>~50 MB memory footprint</strong></li>
+<li class=""><strong>Zero reflection</strong></li>
+<li class=""><strong>Deterministic, safe DI graph</strong></li>
+<li class=""><strong>Lightweight Undertow runtime</strong></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-built-korus">Why I Built Korus<a href="https://korus-projects.github.io/blog/introducing-korus-framework#why-i-built-korus" class="hash-link" aria-label="Direct link to Why I Built Korus" title="Direct link to Why I Built Korus" translate="no">​</a></h2>
+<p>While working with Spring Boot and Micronaut, I noticed a common issue:</p>
+<blockquote>
+<p><em>Even build-time DI frameworks keep some runtime magic.</em></p>
+</blockquote>
+<p>Some still rely on reflection, some use proxies, some still scan packages.<br>
+<!-- -->This inspired the architecture of Korus:</p>
+<ul>
+<li class="">Pure annotation processing</li>
+<li class="">Pure compile-time registry generation</li>
+<li class="">No runtime analysis</li>
+<li class="">No surprises</li>
+</ul>
+<p>Korus aims to bring:</p>
+<ul>
+<li class="">The <strong>developer experience of Spring</strong></li>
+<li class="">The <strong>performance of Quarkus/Micronaut</strong></li>
+<li class="">And a <strong>clean, minimal runtime</strong></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-overview">Architecture Overview<a href="https://korus-projects.github.io/blog/introducing-korus-framework#architecture-overview" class="hash-link" aria-label="Direct link to Architecture Overview" title="Direct link to Architecture Overview" translate="no">​</a></h2>
+<p>Korus consists of <strong>two independent modules</strong>:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="1-korus-processor-build-time-engine"><strong>1. Korus Processor (Build-Time Engine)</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#1-korus-processor-build-time-engine" class="hash-link" aria-label="Direct link to 1-korus-processor-build-time-engine" title="Direct link to 1-korus-processor-build-time-engine" translate="no">​</a></h3>
+<p>Responsible for:</p>
+<ul>
+<li class="">Scanning source code</li>
+<li class="">Building the DI graph</li>
+<li class="">Performing Jandex indexing</li>
+<li class="">Generating wiring and route registries</li>
+<li class="">Auto-generating <code>KorusMain</code></li>
+</ul>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="2-korus-framework-runtime-engine"><strong>2. Korus Framework (Runtime Engine)</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#2-korus-framework-runtime-engine" class="hash-link" aria-label="Direct link to 2-korus-framework-runtime-engine" title="Direct link to 2-korus-framework-runtime-engine" translate="no">​</a></h3>
+<p>A lightweight Undertow-based runtime that:</p>
+<ul>
+<li class="">Loads pre-generated classes instantly</li>
+<li class="">Does not use reflection</li>
+<li class="">Does not scan the classpath</li>
+<li class="">Boots in under <strong>0.25 seconds</strong></li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="where-we-are-today">Where We Are Today<a href="https://korus-projects.github.io/blog/introducing-korus-framework#where-we-are-today" class="hash-link" aria-label="Direct link to Where We Are Today" title="Direct link to Where We Are Today" translate="no">​</a></h2>
+<ul>
+<li class="">20,000+ lines of Java code</li>
+<li class="">Two-module architecture</li>
+<li class="">Stable build-time DI engine</li>
+<li class="">Fast Jandex-based lookup</li>
+<li class="">Hibernate + HikariCP integration</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="whats-next">What’s Next?<a href="https://korus-projects.github.io/blog/introducing-korus-framework#whats-next" class="hash-link" aria-label="Direct link to What’s Next?" title="Direct link to What’s Next?" translate="no">​</a></h2>
+<ul>
+<li class="">Multi-module architecture (Core, Web, Data)</li>
+<li class="">Korus CLI (“korus new app”)</li>
+<li class="">Simpler configuration API</li>
+<li class="">New Data access module</li>
+<li class="">Build-time validation improvements</li>
+</ul>
+<hr>
+<p>Korus is now open to the Java community.<br>
+<!-- -->I built it to solve real problems, and I’m excited to see what developers create with it.</p>
+<p>👉 GitHub: <strong><a href="https://github.com/korus-projects/" target="_blank" rel="noopener noreferrer" class="">https://github.com/korus-projects/</a></strong></p>]]></content>
+        <author>
+            <name>Vinit Shinde</name>
+            <uri>https://github.com/Vin-it-9</uri>
+        </author>
+        <category label="korus" term="korus"/>
+        <category label="java" term="java"/>
+        <category label="framework" term="framework"/>
+        <category label="dependency-injection" term="dependency-injection"/>
+        <category label="release" term="release"/>
+    </entry>
+</feed>
