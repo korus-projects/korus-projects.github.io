@@ -1,66 +1,189 @@
-User-agent: *
-Allow: /
-
-# Block only useless pages
-Disallow: /blog/tags/
-Disallow: /blog/archive
-Disallow: /blog/authors
+# Korus Framework - robots.txt
 
 Sitemap: https://korus-projects.github.io/sitemap.xml
 
-# Google AI
-User-agent: Google-Extended
-Allow: /
-
-# Google Search
+# Google Crawlers (All variants - grouped)
 User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
+User-agent: Mediapartners-Google
+User-agent: Google-InspectionTool
+User-agent: GoogleOther
+User-agent: Google-Read-Aloud
+User-agent: FeedFetcher-Google
+User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
 Allow: /
+Disallow: /blog/tags/
+Disallow: /blog/archive
+Disallow: /blog/authors
+Disallow: /search?
+Disallow: /*?s=
+Disallow: /*.json$
+Disallow: /*.git
 
-# Bing + Copilot
-User-agent: Bingbot
+# Google AI Training (Separate rules)
+User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
+User-agent: Gemini-Deep-Research
 Allow: /
+Disallow: /blog/tags/
+
+# Microsoft Bing (All variants - grouped)
+User-agent: Bingbot
+User-agent: BingPreview
+User-agent: msnbot
+Allow: /
+Disallow: /blog/tags/
+Disallow: /blog/archive
+Disallow: /blog/authors
+Disallow: /search?
+Disallow: /*?s=
+Disallow: /*.json$
+Disallow: /*.git
 
 # OpenAI ChatGPT
 User-agent: GPTBot
+Allow: /
+Disallow: /blog/tags/
+Disallow: /blog/archive
+
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
 Allow: /
 
 # Anthropic Claude
 User-agent: ClaudeBot
 Allow: /
+Disallow: /blog/tags/
+Disallow: /blog/archive
+
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+Allow: /
 
 # Perplexity AI
 User-agent: PerplexityBot
+User-agent: Perplexity-User
 Allow: /
 
-# Apple AI
+# Apple Intelligence
 User-agent: Applebot
+User-agent: Applebot-Extended
 Allow: /
 
 # DuckDuckGo
 User-agent: DuckDuckBot
+User-agent: DuckAssistBot
 Allow: /
 
 # Brave Search
 User-agent: Bravebot
 Allow: /
 
-# CCBot (Common Crawl)
-User-agent: CCBot
+# Meta AI (Facebook, Instagram)
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /blog/tags/
+
+User-agent: Meta-WebIndexer
+User-agent: FacebookBot
+User-agent: facebookexternalhit
 Allow: /
 
-# Facebook / Meta
-User-agent: FacebookBot
+# Developer Platform Link Previews (Critical for Framework Adoption)
+User-agent: Discordbot
+User-agent: Slackbot
+User-agent: Slackbot-LinkExpanding
+User-agent: WhatsApp
+User-agent: TelegramBot
+User-agent: GitHub-Copilot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+Disallow: /blog/tags/
+
+# ByteDance TikTok
+User-agent: Bytespider
+Allow: /
+Disallow: /blog/tags/
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+Disallow: /blog/tags/
+
+# Additional AI Bots
+User-agent: cohere-ai
+User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: AI2Bot
 Allow: /
 
 # International Search Engines
+User-agent: Slurp
 User-agent: Yandex
-Allow: /
-
 User-agent: Baiduspider
-Allow: /
-
 User-agent: Yeti
-Allow: /
-
 User-agent: Sogou Spider
 Allow: /
+
+# Social Media Link Crawlers
+User-agent: LinkedInBot
+User-agent: Twitterbot
+User-agent: Pinterest
+User-agent: Instagram
+Allow: /
+
+# SEO & Monitoring Tools
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: dotbot
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# Archive Services
+User-agent: ia_archiver
+User-agent: archive.org_bot
+Allow: /
+
+# Research & Data Services
+User-agent: Diffbot
+Allow: /
+
+# Blocked Scrapers & Email Harvesters
+User-agent: SiteExplorer
+User-agent: Wget
+User-agent: grub-client
+User-agent: Offline Explorer
+User-agent: HTTrack
+User-agent: WebCopier
+User-agent: WebZIP
+User-agent: WebStripper
+User-agent: WebReaper
+User-agent: EmailCollector
+User-agent: EmailSiphon
+User-agent: EmailWolf
+User-agent: ExtractorPro
+User-agent: CherryPicker
+User-agent: WebBandit
+User-agent: Teleport
+User-agent: TeleportPro
+User-agent: Octopus
+Disallow: /
+
+# Default for all other bots
+User-agent: *
+Allow: /
+Disallow: /blog/tags/
+Disallow: /blog/archive
+Disallow: /blog/authors
+Disallow: /search?
+Disallow: /*?s=
+Disallow: /*.json$
+Disallow: /*.git

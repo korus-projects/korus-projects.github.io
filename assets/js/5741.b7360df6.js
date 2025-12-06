@@ -1,0 +1,1 @@
+(globalThis.webpackChunkkorus_site=globalThis.webpackChunkkorus_site||[]).push([[5741],{5741:()=>{}}]);

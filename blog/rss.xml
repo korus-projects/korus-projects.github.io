@@ -3,11 +3,67 @@
     <channel>
         <title>Korus Framework Blog</title>
         <link>https://korus-projects.github.io/blog</link>
-        <description>Korus Framework Blog</description>
-        <lastBuildDate>Wed, 03 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <description>Java framework with build-time dependency injection - Latest updates, tutorials, and insights</description>
+        <lastBuildDate>Sun, 07 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <copyright>Copyright © 2025 Korus Framework. All rights reserved.</copyright>
+        <item>
+            <title><![CDATA[My Journey into Java and the Story Behind Korus]]></title>
+            <link>https://korus-projects.github.io/blog/my-journey-into-java-and-korus</link>
+            <guid>https://korus-projects.github.io/blog/my-journey-into-java-and-korus</guid>
+            <pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How I started programming, why I built the Korus Java Framework, and my vision for Korus.]]></description>
+            <content:encoded><![CDATA[<p>Hello everyone! I’m <strong>Vinit Shinde</strong> from <strong>Pune</strong>, currently in my <strong>final year at PICT</strong>. This blog is a small part of my story as a developer and the journey that eventually led to the creation of the <strong>Korus Java Framework</strong>.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-everything-started">How Everything Started<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#how-everything-started" class="hash-link" aria-label="Direct link to How Everything Started" title="Direct link to How Everything Started" translate="no">​</a></h2>
+<p>Right after completing my 12th, I directly jumped into programming. I didn’t explore multiple languages—I started straight with <strong>Java</strong>, and that became my world.</p>
+<p>The biggest influence behind my entry into programming was <strong>my cousins</strong>. They guided me, motivated me, and pushed me toward Java when I didn’t even fully understand what programming actually was.</p>
+<p>Looking back, choosing Java as my first language was one of the best decisions I’ve ever made.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="growing-with-java">Growing with Java<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#growing-with-java" class="hash-link" aria-label="Direct link to Growing with Java" title="Direct link to Growing with Java" translate="no">​</a></h2>
+<p>As I got deeper into the language, I began to explore:</p>
+<ul>
+<li class="">Modern Java frameworks</li>
+<li class="">Real-world projects</li>
+<li class="">End-to-end development</li>
+<li class="">Deployment pipelines</li>
+</ul>
+<p>I still remember the moment when I built and deployed a complete project using a modern framework—that’s when I felt <strong>truly confident</strong>. That’s when I realized:</p>
+<blockquote>
+<p><strong>"Yes, I can build real engineering systems."</strong></p>
+</blockquote>
+<p>Since then, I’ve built over <strong>50+ public GitHub repositories</strong>, constantly improving my skills and learning everything from the ground up.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-created-korus">Why I Created Korus<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#why-i-created-korus" class="hash-link" aria-label="Direct link to Why I Created Korus" title="Direct link to Why I Created Korus" translate="no">​</a></h2>
+<p>India has a massive developer ecosystem, especially around Java, but one thing always felt missing:</p>
+<blockquote>
+<p><strong>We didn’t have our own Java framework.</strong></p>
+</blockquote>
+<p>That thought stayed with me. And one day, I decided:</p>
+<blockquote>
+<p>"If something doesn’t exist, I will build it myself."</p>
+</blockquote>
+<p>That’s how <strong>Korus</strong> started.</p>
+<p>Korus is my attempt to bring something fresh, fast, and developer-friendly to the Java world, built with a strong vision and the belief that Indian developers can create world-class open-source tools.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="vision-for-the-future">Vision for the Future<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#vision-for-the-future" class="hash-link" aria-label="Direct link to Vision for the Future" title="Direct link to Vision for the Future" translate="no">​</a></h2>
+<p>My dream is simple:</p>
+<blockquote>
+<p><strong>In the next 5 years, Korus should become one of the top Java frameworks in the world.</strong></p>
+</blockquote>
+<p>Not just another project—but something developers love, trust, and use confidently.</p>
+<p>This is just the beginning.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-words">Final Words<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#final-words" class="hash-link" aria-label="Direct link to Final Words" title="Direct link to Final Words" translate="no">​</a></h2>
+<p>If you're reading this:</p>
+<ul>
+<li class="">Start early</li>
+<li class="">Learn consistently</li>
+<li class="">Build fearlessly</li>
+</ul>
+<p>You don’t need a perfect background or perfect conditions. You just need passion, discipline, and the courage to start.</p>
+<p>Thank you for reading. This journey has shaped me as a developer, and Korus is the biggest step of that journey. The best part is still ahead.</p>]]></content:encoded>
+            <category>java</category>
+            <category>korus</category>
+            <category>journey</category>
+        </item>
         <item>
             <title><![CDATA[Korus vs Spring Boot vs Micronaut vs Quarkus]]></title>
             <link>https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus</link>
