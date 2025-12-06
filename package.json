@@ -15,23 +15,26 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",
-    "@docusaurus/preset-classic": "3.9.2",
-    "@docusaurus/plugin-pwa": "3.9.2",
-    "@docusaurus/plugin-ideal-image": "3.9.2",
     "@docusaurus/plugin-client-redirects": "3.9.2",
-    "@docusaurus/theme-search-algolia": "3.9.2",
-    "@docusaurus/plugin-google-gtag": "3.9.2",
-    "@docusaurus/plugin-sitemap": "3.9.2",
-    "@docusaurus/theme-mermaid": "3.9.2",
-    "@docusaurus/theme-live-codeblock": "3.9.2",
     "@docusaurus/plugin-content-pages": "3.9.2",
+    "@docusaurus/plugin-google-gtag": "3.9.2",
+    "@docusaurus/plugin-ideal-image": "3.9.2",
+    "@docusaurus/plugin-pwa": "3.9.2",
+    "@docusaurus/plugin-sitemap": "3.9.2",
+    "@docusaurus/plugin-vercel-analytics": "3.9.2",
+    "@docusaurus/preset-classic": "3.9.2",
+    "@docusaurus/theme-live-codeblock": "3.9.2",
+    "@docusaurus/theme-mermaid": "3.9.2",
+    "@docusaurus/theme-search-algolia": "3.9.2",
+    "@easyops-cn/docusaurus-search-local": "^0.44.5",
+    "@gracefullight/docusaurus-plugin-microsoft-clarity": "^1.0.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-sass": "^0.2.5",
     "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2"

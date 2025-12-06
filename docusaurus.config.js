@@ -45,6 +45,14 @@ const config = {
           breadcrumbs: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          sidebarCollapsible: true,
+          sidebarCollapsed: false,
+          routeBasePath: 'docs',
+          docItemComponent: '@theme/DocItem',
+          docTagDocListComponent: '@theme/DocTagDocListPage',
+          docTagsListComponent: '@theme/DocTagsListPage',
+          docCategoryGeneratedIndexComponent: '@theme/DocCategoryGeneratedIndexPage',
+          path: 'docs',
         },
 
         blog: {
@@ -52,11 +60,43 @@ const config = {
           editUrl: 'https://github.com/korus-projects/korus-projects.github.io/tree/main/',
           authorsMapPath: 'authors.yml',
           postsPerPage: 5,
+          routeBasePath: 'blog',
+          path: 'blog',
           sortPosts: 'descending',
-          readingTime: ({ content, defaultReadingTime }) =>
-              defaultReadingTime({ content, wordsPerMinute: 250 }),
-          // feedOptions: { type: ['rss', 'atom'] },
+
+          blogTitle: 'Korus Framework Blog',
+          blogDescription: 'Build-time DI, performance insights, and framework updates',
+          blogSidebarTitle: 'Recent Posts',
+          blogSidebarCount: 10,
+
+          readingTime: ({content, frontMatter, defaultReadingTime}) => {
+            return frontMatter.hide_reading_time
+                ? undefined
+                : defaultReadingTime({content, options: {wordsPerMinute: 200}});
+          },
+
+          feedOptions: {
+            type: ['rss', 'atom', 'json'],
+            title: 'Korus Framework Blog',
+            description: 'Java framework with build-time dependency injection - Latest updates, tutorials, and insights',
+            copyright: `Copyright © ${new Date().getFullYear()} Korus Framework. All rights reserved.`,
+            language: 'en',
+            limit: 20,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                blogPosts: blogPosts.filter((item, index) => index < 20),
+                ...rest,
+              });
+            },
+          },
+
+          truncateMarker: /<!--\s*truncate\s*-->/,
+
+          include: ['**/*.{md,mdx}'],
+
         },
+
 
         theme: {
           customCss: './src/css/custom.css',
@@ -69,18 +109,35 @@ const config = {
 
         sitemap: {
           lastmod: 'date',
-          changefreq: 'weekly',
-          priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          changefreq: 'daily',
+          priority: null,
+          ignorePatterns: ['/tags/**', '/blog/archive', '/blog/authors'],
           filename: 'sitemap.xml',
-        },
 
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+
+            return items.map((item) => {
+              if (item.url === 'https://korus-projects.github.io/') {
+                return {...item, priority: 1.0, changefreq: 'daily'};
+              }
+              if (item.url.includes('/docs/')) {
+                return {...item, priority: 0.8, changefreq: 'daily'};
+              }
+              if (item.url.includes('/blog/') && !item.url.includes('/tags/')) {
+                return {...item, priority: 0.7, changefreq: 'weekly'};
+              }
+              return item;
+            });
+          },
+        },
       },
     ],
   ],
 
   plugins: [
-    // Progressive Web App for offline/installable UX
+    // PWA (already have)
     [
       '@docusaurus/plugin-pwa',
       {
@@ -93,9 +150,11 @@ const config = {
         ],
       },
     ],
-    // Client redirects for future URL changes
+
+    // Redirects
     ['@docusaurus/plugin-client-redirects', {}],
-    // Optimized responsive images for better performance
+
+    // Images
     [
       '@docusaurus/plugin-ideal-image',
       {
@@ -104,7 +163,21 @@ const config = {
         disableInDev: true,
       },
     ],
-    // plugin-sitemap is already included via preset-classic; no explicit entry needed
+
+    // Local Search
+    [require.resolve("@easyops-cn/docusaurus-search-local"), {
+      hashed: true,
+      language: ["en"],
+      explicitSearchResultPath: true,
+      docsRouteBasePath: '/docs',
+      blogRouteBasePath: '/blog',
+    }],
+
+    // Vercel Analytics (Better than GA)
+    '@docusaurus/plugin-vercel-analytics',
+
+
+    'docusaurus-plugin-sass',
   ],
 
 
@@ -114,6 +187,14 @@ const config = {
       attributes: {
         name: 'google-site-verification',
         content: 'Gygy4FgsbWRDVK9dZfXN-hQqp1iI2I3w56hFCS6Ko1E',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'sitemap',
+        type: 'application/xml',
+        href: '/sitemap.xml',
       },
     },
     {
@@ -246,6 +327,7 @@ const config = {
               "Full-stack Developers"
             ]
           },
+
           "sameAs": [
             "https://github.com/korus-projects",
             "https://github.com/korus-projects/korus-projects.github.io",
@@ -389,6 +471,67 @@ const config = {
           "memoryRequirements": "Minimum 512MB RAM",
           "storageRequirements": "Minimum 50MB disk space",
           "processorRequirements": "Any modern CPU with JVM support"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://korus-projects.github.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Documentation",
+              "item": "https://korus-projects.github.io/docs"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Blog",
+              "item": "https://korus-projects.github.io/blog"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://korus-projects.github.io/#website",
+          "url": "https://korus-projects.github.io",
+          "name": "Korus Framework",
+          "publisher": {
+            "@id": "https://korus-projects.github.io/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://korus-projects.github.io/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://korus-projects.github.io/#organization",
+          "name": "Korus Framework",
+          "url": "https://korus-projects.github.io",
+          "logo": "https://korus-projects.github.io/img/logo.png",
+          "foundingDate": "2025",
+          "founder": {
+            "@type": "Person",
+            "@id": "https://github.com/Vin-it-9/#identity"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Technical Support",
+            "url": "https://github.com/korus-projects/korus-projects.github.io/issues"
+          },
+          "sameAs": [
+            "https://github.com/korus-projects",
+            "https://www.linkedin.com/company/korus-framework/"
+          ]
         }
       ])
     }
@@ -407,6 +550,9 @@ const config = {
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
       { name: 'bingbot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { name: 'copyright', content: 'Vinit Shinde' },
+      { name: 'owner', content: 'Vinit Shinde' },
+      { name: 'creator', content: 'Vinit Shinde' },
 
       // Canonical & Language
       { name: 'canonical', content: 'https://korus-projects.github.io/' },
@@ -428,18 +574,26 @@ const config = {
       { property: 'og:site_name', content: 'Korus Framework' },
       { property: 'og:locale', content: 'en_US' },
       { property: 'og:updated_time', content: lastUpdated },
+      { property: 'og:see_also', content: 'https://github.com/korus-projects' },
+      { property: 'og:see_also', content: 'https://www.linkedin.com/company/korus-framework/' },
       { property: 'article:author', content: 'Vinit Shinde' },
       { property: 'article:section', content: 'Technology' },
       { property: 'article:tag', content: 'Java Framework' },
+      { property: 'linkedin:owner', content: 'company/korus-framework' },
+
 
       // Twitter Cards
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Korus Framework — Ultra-Fast Java Build-Time DI' },
+      { name: 'twitter:title', content: 'Korus Build-Time DI Java Framework' },
       { name: 'twitter:description', content: 'A next-generation Java framework powered by build-time DI, Jandex indexing and zero reflection. Sub-200ms startup for enterprise applications.' },
       { name: 'twitter:image', content: 'https://korus-projects.github.io/img/korus-social-card.png' },
-      { name: 'twitter:creator', content: '@korus_framework' },
-      { name: 'twitter:site', content: '@korus_framework' },
+      { name: 'twitter:creator', content: '@Vinit_Shinde_' },
+      { name: 'twitter:site', content: '@Vinit_Shinde_' },
       { name: 'twitter:domain', content: 'korus-projects.github.io' },
+      { name: 'twitter:label1', content: 'Framework Type' },
+      { name: 'twitter:data1', content: 'Build-time DI' },
+      { name: 'twitter:label2', content: 'Startup Time' },
+      { name: 'twitter:data2', content: 'Sub-200ms' },
 
       // Mobile Web App
       { name: 'theme-color', content: '#0d1117' },
@@ -451,6 +605,9 @@ const config = {
       // Performance & Caching
       { httpEquiv: 'Cache-Control', content: 'public, max-age=31536000, immutable' },
       { name: 'referrer', content: 'strict-origin-when-cross-origin' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0' },
+      { rel: 'preconnect', href: 'https://github.com' },
+      { rel: 'dns-prefetch', href: 'https://github.com' },
 
       // AI Crawlers & Search Engines
       { name: 'ai-content', content: 'This site documents Korus Framework — a Java build-time DI engine with zero reflection, AOT compilation, and sub-200ms startup time.' },
@@ -459,16 +616,23 @@ const config = {
       { name: 'distribution', content: 'Global' },
       { name: 'rating', content: 'General' },
       { name: 'target', content: 'all' },
-      { name: 'audience', content: 'Java Developers, Software Engineers, Backend Developers' },
-      { name: 'classification', content: 'Java Framework, Dependency Injection, Software Development' },
+      { name: 'audience', content: 'Java Developers, Software Engineers, Backend Developers, Full Stack Developers, Microservices Engineers, Cloud Engineers, DevOps Engineers, Solution Architects, Software Architects, Tech Leads, API Developers, Platform Engineers, Distributed Systems Engineers, Spring Boot Developers, Quarkus Developers, Micronaut Developers, System Designers, Enterprise Application Developers, Scalability Engineers, Performance Engineers' },
+      { name: 'classification',content: 'Java Framework, Dependency Injection, Software Development, Microservices Architecture, Inversion of Control, Backend Engineering, REST API Development, Cloud-Native Applications, JVM Technologies, Enterprise Applications, Modular Architecture, Reactive Programming, Application Performance, Build Tools, Design Patterns, API Security, Framework Design, Open-Source Development'},
 
       // Ownership / verification
       { name: 'google-site-verification', content: 'Gygy4FgsbWRDVK9dZfXN-hQqp1iI2I3w56hFCS6Ko1E' },
-      { name: 'msvalidate.01', content: 'YOUR_BING_CODE' },
+      { name: 'msvalidate.01', content: '8C5366C6C194F663DAFC654956C69E18' },
 
-      // Additional Schema.org hints
+      // Geographic targeting
+      { name: 'geo.region', content: 'US' },
+      { name: 'geo.placename', content: 'Global' },
+
+      { name: 'app:category', content: 'Developer Tools' },
+      { property: 'product:category', content: 'Software Development Tools' },
+
+      // Schema.org hints
       { name: 'application-name', content: 'Korus Framework Documentation' },
-      { name: 'category', content: 'Software Development' },
+      { name: 'category', content: 'Software Development, Backend Development, Java Development, Microservices, Cloud Computing, Framework Engineering, API Development, System Design, Distributed Systems, DevOps, Application Architecture, Enterprise Software, JVM Ecosystem, Full Stack Development, RESTful Services, Event-Driven Architecture, CI/CD, Software Engineering Practices, Platform Engineering, Open Source Software, High-Performance Computing, Scalability Engineering, Security Engineering, Application Deployment'},
     ],
 
 
@@ -539,15 +703,6 @@ const config = {
         hideable: true,
         autoCollapseCategories: true,
       },
-    },
-
-    // Search (Algolia DocSearch)
-    algolia: {
-      appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
-      apiKey: process.env.ALGOLIA_API_KEY || 'YOUR_SEARCH_API_KEY',
-      indexName: process.env.ALGOLIA_INDEX_NAME || 'YOUR_INDEX_NAME',
-      contextualSearch: true,
-      searchPagePath: 'search',
     },
 
     // Mermaid theme for dark/light
