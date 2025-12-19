@@ -1,0 +1,31 @@
+.container {
+  margin: 1.5rem 0;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-font-color-base);
+  opacity: 0.8;
+}
+
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.codeBlock {
+  margin: 0;
+  border-radius: 0;
+}
+
+.error {
+  padding: 1rem;
+  background: var(--ifm-color-danger-contrast-background);
+  color: var(--ifm-color-danger);
+  border-left: 4px solid var(--ifm-color-danger);
+  border-radius: 4px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.875rem;
+}

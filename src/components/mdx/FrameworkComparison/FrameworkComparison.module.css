@@ -1,0 +1,79 @@
+.container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-card-background-color);
+}
+
+.title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: var(--ifm-heading-color);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: 200px repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cell {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+.headerCell {
+  font-weight: 700;
+  text-align: center;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-heading-color);
+}
+
+.headerCell--highlight {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.featureCell {
+  font-weight: 600;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.valueCell {
+  text-align: center;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.valueCell--highlight {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-lightest);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .row {
+    grid-template-columns: 1fr;
+  }
+  
+  .headerCell,
+  .valueCell {
+    text-align: left;
+  }
+  
+  .featureCell {
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: var(--ifm-color-primary-lightest);
+  }
+}
