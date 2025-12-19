@@ -30,6 +30,7 @@ const config = {
   // Markdown + hooks
   markdown: {
     mermaid: true,
+    format: 'detect',
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
@@ -48,6 +49,7 @@ const config = {
           sidebarCollapsible: true,
           sidebarCollapsed: false,
           routeBasePath: 'docs',
+          include: ['**/*.md', '**/*.mdx'],
           docItemComponent: '@theme/DocItem',
           docTagDocListComponent: '@theme/DocTagDocListPage',
           docTagsListComponent: '@theme/DocTagsListPage',
@@ -137,7 +139,7 @@ const config = {
   ],
 
   plugins: [
-    // PWA (already have)
+    // PWA
     [
       '@docusaurus/plugin-pwa',
       {
@@ -173,7 +175,7 @@ const config = {
       blogRouteBasePath: '/blog',
     }],
 
-    // Vercel Analytics (Better than GA)
+    // Vercel Analytics
     '@docusaurus/plugin-vercel-analytics',
 
 
@@ -689,12 +691,6 @@ const config = {
           ],
         },
       ],
-      copyright: `
-        <div style="margin-top: 2px;">
-          <p style="margin-bottom: 2px;">Copyright © ${new Date().getFullYear()} Korus Framework. All rights reserved.</p>
-          <p style="font-size: 0.85rem; opacity: 0.8;">Built with ❤️ using Docusaurus</p>
-        </div>
-      `,
     },
 
     // Docs UX tweaks (hideable/auto-collapsing sidebar)
