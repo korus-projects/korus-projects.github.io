@@ -1,47 +1,48 @@
 import React from 'react';
-import './FeatureCard.css';
 import Link from '@docusaurus/Link';
+import styles from './FeatureCard.module.css';
+import { cn } from '@site/src/utils';
 
-/**
- * Reusable feature card component
- */
 export default function FeatureCard({
-                                        title,
-                                        description,
-                                        icon,
-                                        link = null,
-                                        variant = 'default' // 'default', 'cta', 'story'
-                                    }) {
+    title,
+    description,
+    icon,
+    link = null,
+    variant = 'default' // 'default', 'cta', 'story'
+}) {
     const CardContent = () => (
         <>
             {icon && (
-                <div className={`feature-card__icon feature-card__icon--${icon}`}>
+                <div className={cn(styles.icon, styles[`icon--${icon}`])}>
                     <FeatureIcon name={icon} />
                 </div>
             )}
-            <h3 className="feature-card__title">{title}</h3>
-            <p className="feature-card__description">{description}</p>
+            <h3 className={styles.title}>{title}</h3>
+            <p className={styles.description}>{description}</p>
             {link && (
-                <span className="feature-card__link">
+                <span className={styles.link}>
                     Learn more →
                 </span>
             )}
         </>
     );
 
+    const cardClasses = cn(
+        styles.card,
+        styles[`card--${variant}`],
+        link && styles['card--clickable']
+    );
+
     if (link) {
         return (
-            <Link
-                to={link}
-                className={`feature-card feature-card--${variant} feature-card--clickable`}
-            >
+            <Link to={link} className={cardClasses}>
                 <CardContent />
             </Link>
         );
     }
 
     return (
-        <div className={`feature-card feature-card--${variant}`}>
+        <div className={cardClasses}>
             <CardContent />
         </div>
     );
