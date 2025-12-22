@@ -176,7 +176,7 @@ const config = {
     }],
 
     // Vercel Analytics
-    '@docusaurus/plugin-vercel-analytics',
+    // '@docusaurus/plugin-vercel-analytics',
 
 
     'docusaurus-plugin-sass',
