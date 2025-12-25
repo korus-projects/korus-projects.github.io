@@ -4,7 +4,7 @@ export const HERO_CONTENT = {
     tagline: 'Build time Java framework for full stack applications',
     description: `Korus performs all dependency injection, configuration binding, and route registration at compile time — not runtime. No main method, no classpath scanning, no reflection proxies.`,
     version: 'v1.0.0',
-    javaVersion: 'Java 17+',
+    javaVersion: 'Java 25+',
     license: 'Apache License'
 };
 

@@ -347,7 +347,7 @@ const config = {
           },
           "applicationCategory": "DeveloperApplication",
           "applicationSubCategory": "Dependency Injection Framework",
-          "operatingSystem": "Java 17+",
+          "operatingSystem": "Java 25+",
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -400,7 +400,7 @@ const config = {
             "RESTful API Framework",
             "Web Framework Java",
             "Backend Framework Java",
-            "Java 17 Framework",
+            "Java 25 Framework",
             "Maven Plugin Java",
             "Full-stack Java Framework"
           ],
@@ -451,7 +451,7 @@ const config = {
             "en-GB",
             "en-IN"
           ],
-          "softwareRequirements": "Java 17 or higher, Maven 3.6+",
+          "softwareRequirements": "Java 25 or higher, Maven 3.6+",
           "softwareHelp": {
             "@type": "CreativeWork",
             "url": "https://korus-projects.github.io/docs"
@@ -546,7 +546,7 @@ const config = {
     // SEO metadata and social tags
     metadata: [
       // Basic SEO
-      { name: 'keywords', content: 'Korus, Korus Framework, Korus Java Framework, Korus JVM Framework, Java framework, Dependency Injection, Build-time DI, Compile-time DI, AOT Java, Ahead-of-Time Compilation, Zero Reflection, No Reflection Framework, Undertow, Undertow Web Server, Jandex, Jandex Indexing, Micronaut alternative, Quarkus alternative, Spring Boot alternative, Spring Alternative, Fast Java framework, Sub-200ms startup, Ultra-fast startup, Java compiler plugins, Annotation Processing, Java Annotation Processing, Enterprise Java, Enterprise Java Framework, Microservices Framework, Java Microservices, RESTful API Framework, Backend Framework, Modern Java Framework, Next-Generation Java, Lightweight Java Framework, High-Performance Java, Java 17, Java 17 Framework, Maven Plugin, Full-stack Java' },
+      { name: 'keywords', content: 'Korus, Korus Framework, Korus Java Framework, Korus JVM Framework, Java framework, Dependency Injection, Build-time DI, Compile-time DI, AOT Java, Ahead-of-Time Compilation, Zero Reflection, No Reflection Framework, Undertow, Undertow Web Server, Jandex, Jandex Indexing, Micronaut alternative, Quarkus alternative, Spring Boot alternative, Spring Alternative, Fast Java framework, Sub-200ms startup, Ultra-fast startup, Java compiler plugins, Annotation Processing, Java Annotation Processing, Enterprise Java, Enterprise Java Framework, Microservices Framework, Java Microservices, RESTful API Framework, Backend Framework, Modern Java Framework, Next-Generation Java, Lightweight Java Framework, High-Performance Java, Java 25, Java 25 Framework, Maven Plugin, Full-stack Java' },
       { name: 'description', content: 'Korus Framework — Ultra-fast Java framework with build-time dependency injection, zero reflection, pre-generated DI graph, and sub-200ms startup time. Modern alternative to Spring, Micronaut, and Quarkus with AOT compilation and Undertow runtime.' },
       { name: 'author', content: 'Vinit Shinde' },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
