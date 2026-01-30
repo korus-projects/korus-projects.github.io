@@ -1,11 +1,11 @@
 {
-  "name": "Korus Framework CLA",
-  "project_name": "Korus Framework",
-  "project_url": "https://github.com/korus-projects",
-  "legal_entity": "Korus Projects Organization",
+  "name": "Preonus Framework CLA",
+  "project_name": "Preonus Framework",
+  "project_url": "https://github.com/preonus-projects",
+  "legal_entity": "Preonus Projects Organization",
   "type": "individual",
-  "message": "Thank you for your contribution! Before we can review your pull request, you must sign the Korus Framework Contributor License Agreement (CLA). Please click the link below to sign.",
-  "signed_community": "Korus-CLA-Contributors",
+  "message": "Thank you for your contribution! Before we can review your pull request, you must sign the Preonus Framework Contributor License Agreement (CLA). Please click the link below to sign.",
+  "signed_community": "Preonus-CLA-Contributors",
   "use_cla": true,
   "require_signed_commits": false
 }

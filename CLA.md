@@ -1,11 +1,11 @@
-# Korus Framework
+# Preonus Framework
 # Individual Contributor License Agreement (CLA)
 
-Thank you for your interest in contributing to the Korus Framework ("Korus")
-maintained by the Korus Projects Organization ("Korus Org").
+Thank you for your interest in contributing to the Preonus Framework ("Preonus")
+maintained by the Preonus Projects Organization ("Preonus Org").
 
 This Contributor License Agreement ("Agreement") documents the rights granted by
-you ("Contributor") to the Korus Projects Organization. By submitting a pull
+you ("Contributor") to the Preonus Projects Organization. By submitting a pull
 request, patch, code, documentation, or any other contribution, you agree to
 the terms of this Agreement.
 
@@ -15,27 +15,27 @@ the terms of this Agreement.
 
 **"Contribution"**  
 Means any original work of authorship, including modifications or additions to
-the existing Work, intentionally submitted by you to Korus Org for inclusion
-in the Korus Framework.
+the existing Work, intentionally submitted by you to Preonus Org for inclusion
+in the Preonus Framework.
 
 **"Submitted"**  
-Means any form of communication to Korus Org via GitHub issues, pull requests,
-email, or any other system managed by Korus Org.
+Means any form of communication to Preonus Org via GitHub issues, pull requests,
+email, or any other system managed by Preonus Org.
 
 ---
 
 ## 2. Grant of Copyright License
 
-You hereby grant to Korus Projects Organization a perpetual, worldwide,
+You hereby grant to Preonus Projects Organization a perpetual, worldwide,
 non-exclusive, royalty-free, irrevocable copyright license to reproduce,
 prepare derivative works of, publicly display, publicly perform, sublicense,
-and distribute your Contributions as part of the Korus Framework.
+and distribute your Contributions as part of the Preonus Framework.
 
 ---
 
 ## 3. Grant of Patent License
 
-You grant Korus Projects Organization a perpetual, worldwide, non-exclusive,
+You grant Preonus Projects Organization a perpetual, worldwide, non-exclusive,
 royalty-free, irrevocable patent license to make, use, sell, and otherwise
 transfer your Contribution, where such license applies only to patent claims
 you own or control that are necessarily infringed by your Contribution.
@@ -47,9 +47,9 @@ you own or control that are necessarily infringed by your Contribution.
 1. Your Contribution is **your original work**, or you have the right to submit it.
 2. Your Contribution is not knowingly violating any third-party rights.
 3. You agree that your Contribution will be publicly available under the  
-   **Apache License 2.0**, the license used by Korus Framework.
+   **Apache License 2.0**, the license used by Preonus Framework.
 4. You are legally able to grant this license.
-5. You understand that **Korus Org is not required to use your Contribution**.
+5. You understand that **Preonus Org is not required to use your Contribution**.
 
 ---
 
@@ -62,14 +62,14 @@ express or implied.
 
 ## 6. Support and Liability
 
-This Agreement does not obligate Korus Org to provide support, maintenance, or
-warranty for your Contribution. You are not liable for other contributions to Korus.
+This Agreement does not obligate Preonus Org to provide support, maintenance, or
+warranty for your Contribution. You are not liable for other contributions to Preonus.
 
 ---
 
 ## 7. Entire Agreement
 
-This Agreement constitutes the entire agreement between you and Korus Org regarding
+This Agreement constitutes the entire agreement between you and Preonus Org regarding
 Contributions. No other terms apply unless agreed in writing.
 
 ---
@@ -77,6 +77,6 @@ Contributions. No other terms apply unless agreed in writing.
 ## 8. Agreement Acceptance
 
 By submitting a GitHub Pull Request, Issue, Patch, Commit, or any software/documentation
-to the Korus Framework repositories, you indicate your agreement to this CLA.
+to the Preonus Framework repositories, you indicate your agreement to this CLA.
 
-Thank you for contributing to the Korus Framework!
+Thank you for contributing to the Preonus Framework!
