@@ -4,6 +4,7 @@ title: "From Korus to Preonus: The Story Behind Our Name"
 description: "Discover why we renamed our framework from Korus to Preonus, and the meaning behind the new name rooted in particle physics and Latin."
 authors: [vinit]
 tags: [preonus, announcement, branding, name change]
+keywords: [preonus, korus, rebranding, java framework, naming, open source, particle physics]
 ---
 
 # From Korus to Preonus: The Story Behind Our Name

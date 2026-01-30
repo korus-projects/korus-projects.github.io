@@ -1,9 +1,10 @@
 ---
 title: "My Journey into Java and the Story Behind Preonus"
-description: "How I started programming, why I built the Preonus Java Framework, and my vision for Preonus."
+description: "Vinit Shinde shares his journey from learning Java to building Preonus Framework—a modern tool designed to solve the startup time and memory challenges of traditional Java."
 slug: my-journey-into-java-and-preonus
 authors: [vinit]
 tags: [java, preonus, journey]
+keywords: [java journey, preonus story, vinit shinde, java developer, open source, career, coding]
 ---
 
 # My Journey into Java and the Story Behind Preonus

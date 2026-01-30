@@ -4,6 +4,7 @@ title: "Preonus vs Spring Boot vs Micronaut vs Quarkus"
 description: "A practical comparison of modern Java frameworks — startup time, memory, DI model, and architecture."
 authors: [vinit]
 tags: [preonus, java, comparison, quarkus, spring, micronaut]
+keywords: [preonus vs spring boot, preonus vs micronaut, preonus vs quarkus, java framework comparison, benchmark, performance, startup time]
 ---
 
 # Preonus vs Spring Boot vs Micronaut vs Quarkus

@@ -1,9 +1,10 @@
 ---
 slug: introducing-preonus-framework
 title: "Introducing Preonus Framework"
-description: "A new ultra-fast Java framework powered by build-time dependency injection and zero reflection."
+description: "Discover Preonus Framework: The new ultra-fast Java framework with build-time dependency injection, zero reflection, and sub-200ms startup for modern cloud-native apps."
 authors: [vinit]
 tags: [preonus, java, framework, dependency-injection, release]
+keywords: [preonus, java framework, build-time di, release, introduction, zero reflection, performance, aot]
 ---
 
 # Introducing Preonus Framework

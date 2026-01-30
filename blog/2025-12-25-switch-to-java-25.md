@@ -1,9 +1,10 @@
 ---
 slug: switch-to-java-25
 title: "Switching Baseline to Java 25"
-description: "We are updating our project baseline to Java 25 to leverage the latest JVM innovations and native performance."
+description: "Preonus now requires Java 25. See how we leverage the Class-File API, Compact Object Headers, and Stable Values to deliver the fastest Java framework performance yet."
 authors: [vinit]
 tags: [java-25, java, updates]
+keywords: [java 25, preonus, java update, baseline, performance, class-file api, compact object headers, stable values]
 ---
 
 # Update: Switching Baseline to Java 25

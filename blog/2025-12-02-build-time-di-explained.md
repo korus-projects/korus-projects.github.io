@@ -1,9 +1,10 @@
 ---
 slug: build-time-dependency-injection-explained
 title: "Build-Time Dependency Injection Explained"
-description: "How Preonus generates your DI graph at compile time and eliminates reflection completely."
+description: "Learn how Preonus generates dependency injection graphs at compile time, eliminating runtime reflection and proxies to deliver instant startup and minimal memory footprint."
 authors: [vinit]
 tags: [preonus, java, dependency-injection, build-time, aot]
+keywords: [build-time di, dependency injection, preonus, java, aot, compile-time, performance, internals, reflection]
 ---
 
 # Build-Time Dependency Injection Explained
