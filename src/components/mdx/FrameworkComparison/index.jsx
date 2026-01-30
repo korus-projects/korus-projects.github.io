@@ -8,17 +8,17 @@ import styles from './FrameworkComparison.module.css';
  * 
  * @example
  * <FrameworkComparison 
- *   title="Korus vs Spring Boot"
+ *   title="Preonus vs Spring Boot"
  *   features={[
- *     { name: 'DI Style', korus: 'Build-time', spring: 'Runtime' }
+ *     { name: 'DI Style', preonus: 'Build-time', spring: 'Runtime' }
  *   ]}
  * />
  */
 export default function FrameworkComparison({ 
   title = 'Framework Comparison',
   features = [],
-  frameworks = ['Korus', 'Spring Boot'],
-  highlightFramework = 'Korus'
+  frameworks = ['Preonus', 'Spring Boot'],
+  highlightFramework = 'Preonus'
 }) {
   return (
     <div className={styles.container}>

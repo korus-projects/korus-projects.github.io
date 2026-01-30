@@ -16,7 +16,7 @@ import styles from './MigrationGuide.module.css';
  */
 export default function MigrationGuide({ 
   from, 
-  to = 'Korus',
+  to = 'Preonus',
   steps = [],
   estimatedTime = null
 }) {

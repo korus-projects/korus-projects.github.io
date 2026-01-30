@@ -7,7 +7,7 @@ import styles from './DependencyBadge.module.css';
  * Dependency version badge display
  * 
  * @example
- * <DependencyBadge name="korus-core" version="1.0.0" />
+ * <DependencyBadge name="preonus-core" version="1.0.0" />
  */
 export default function DependencyBadge({ 
   name, 

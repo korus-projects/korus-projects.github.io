@@ -10,7 +10,7 @@ import styles from './PerformanceChart.module.css';
  * <PerformanceChart 
  *   data={[
  *     { name: 'Spring Boot', value: 2000 },
- *     { name: 'Korus', value: 185 }
+ *     { name: 'Preonus', value: 185 }
  *   ]}
  *   metric="Startup Time (ms)"
  * />
@@ -18,7 +18,7 @@ import styles from './PerformanceChart.module.css';
 export default function PerformanceChart({ 
   data = [], 
   metric = 'Value',
-  highlightName = 'Korus',
+  highlightName = 'Preonus',
   unit = '',
   lowerIsBetter = true
 }) {

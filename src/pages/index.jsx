@@ -24,7 +24,7 @@ export default function Home() {
             {/* Three CTA Cards - Docs, Guides, Launch */}
             <CTACards />
 
-            {/* Comparison - Korus way vs Old way */}
+            {/* Comparison - Preonus way vs Old way */}
             <ComparisonSection />
 
             {/* Key Features - Six feature cards */}

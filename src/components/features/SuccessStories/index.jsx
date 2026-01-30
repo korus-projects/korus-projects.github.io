@@ -8,8 +8,8 @@ export default function SuccessStories() {
     return (
         <SectionWrapper
             id="success-stories"
-            title="Korus in Action"
-            subtitle="See what you can build with Korus"
+            title="Preonus in Action"
+            subtitle="See what you can build with Preonus"
             className={styles.section}
         >
             <div className={styles.grid}>

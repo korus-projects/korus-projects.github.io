@@ -98,7 +98,7 @@ export default function HeroSection() {
                             <span>Get Started</span>
                             <ArrowIcon />
                         </Link>
-                        <Link className="hero-btn hero-btn--secondary" to="https://github.com/korus-projects">
+                        <Link className="hero-btn hero-btn--secondary" to="https://github.com/preonus-projects">
                             <GitHubIcon />
                             <span>View on GitHub</span>
                         </Link>
@@ -129,7 +129,7 @@ export default function HeroSection() {
 
                         <div className="hero-sphere">
                             <div className="hero-sphere__core">
-                                <img src="/img/logo.png" alt="Korus Logo" className="hero-sphere__logo" />
+                                <img src="/img/logo.png" alt="Preonus Logo" className="hero-sphere__logo" />
                             </div>
                             <div className="hero-sphere__ring hero-sphere__ring--1" ref={el => ringRefs.current[0] = el}></div>
                             <div className="hero-sphere__ring hero-sphere__ring--2" ref={el => ringRefs.current[1] = el}></div>

@@ -1,8 +1,8 @@
 export const HERO_CONTENT = {
     eyebrow: 'Build time framework',
-    title: 'Korus Framework',
+    title: 'Preonus Framework',
     tagline: 'Build time Java framework for full stack applications',
-    description: `Korus performs all dependency injection, configuration binding, and route registration at compile time — not runtime. No main method, no classpath scanning, no reflection proxies.`,
+    description: `Preonus performs all dependency injection, configuration binding, and route registration at compile time — not runtime. No main method, no classpath scanning, no reflection proxies.`,
     version: 'v1.0.0',
     javaVersion: 'Java 25+',
     license: 'Apache License'
@@ -12,14 +12,14 @@ export const CTA_CARDS = [
     {
         id: 'docs',
         title: 'View the documentation',
-        description: 'Comprehensive guides covering every aspect of the Korus Framework, from installation to advanced topics.',
+        description: 'Comprehensive guides covering every aspect of the Preonus Framework, from installation to advanced topics.',
         link: '/docs/intro',
         icon: 'docs'
     },
     {
         id: 'tutorial',
         title: 'Browse the tutorial',
-        description: 'Step-by-step tutorials to help you build real applications with Korus quickly and efficiently.',
+        description: 'Step-by-step tutorials to help you build real applications with Preonus quickly and efficiently.',
         link: '/docs/intro',
         icon: 'guides'
     },
@@ -27,16 +27,16 @@ export const CTA_CARDS = [
         id: 'github',
         title: 'Explore on GitHub',
         description: 'Check out the source code, contribute to the project, and stay updated with the latest releases.',
-        link: 'https://github.com/korus-projects',
+        link: 'https://github.com/preonus-projects',
         icon: 'launch'
     }
 ];
 
 export const COMPARISON_CONTENT = {
     sectionTitle: 'Reimagine startup time and memory consumption',
-    sectionSubtitle: 'See how Korus transforms Java application performance',
-    korusWay: {
-        title: 'The Korus way',
+    sectionSubtitle: 'See how Preonus transforms Java application performance',
+    preonusWay: {
+        title: 'The Preonus way',
         points: [
             {
                 heading: 'Build-time dependency wiring',
@@ -89,7 +89,7 @@ export const KEY_FEATURES = [
     {
         id: 'zero-config',
         title: 'Zero-configuration startup',
-        description: 'No main class required.  Korus auto-generates the entry point, so you focus purely on business logic.',
+        description: 'No main class required.  Preonus auto-generates the entry point, so you focus purely on business logic.',
         icon: 'zeroConfig'
     },
     {
@@ -145,7 +145,7 @@ export const SUCCESS_STORIES = [
 export const NAV_ITEMS = [
     { label: 'Docs', href: '/docs/intro' },
     { label: 'Blog', href: '/blog' },
-    { label: 'GitHub', href: 'https://github.com/korus-projects', external: true },
-    { label: 'LinkedIn', href: 'https://linkedin.com/company/korus-framework', external: true }
+    { label: 'GitHub', href: 'https://github.com/preonus-projects', external: true },
+    { label: 'LinkedIn', href: 'https://linkedin.com/company/preonus-framework', external: true }
 ];
 

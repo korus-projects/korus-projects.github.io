@@ -7,7 +7,7 @@ import styles from './CopyButton.module.css';
  * Copy-to-clipboard button for command snippets
  * 
  * @example
- * <CopyButton text="npm install @korus/core" />
+ * <CopyButton text="npm install @preonus/core" />
  * 
  * @example
  * <CopyButton>mvn clean install</CopyButton>

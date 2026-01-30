@@ -5,7 +5,7 @@ import styles from './ComparisonSection.module.css';
 
 
 export default function ComparisonSection() {
-    const { sectionTitle, sectionSubtitle, korusWay, oldWay } = COMPARISON_CONTENT;
+    const { sectionTitle, sectionSubtitle, preonusWay, oldWay } = COMPARISON_CONTENT;
 
     return (
         <SectionWrapper
@@ -15,14 +15,14 @@ export default function ComparisonSection() {
             className={styles.section}
         >
             <div className={styles.grid}>
-                {/* The Korus Way */}
-                <div className={`${styles.column} ${styles['column--korus']}`}>
+                {/* The Preonus Way */}
+                <div className={`${styles.column} ${styles['column--preonus']}`}>
                     <div className={styles.header}>
                         <CheckIcon />
-                        <h3>{korusWay.title}</h3>
+                        <h3>{preonusWay.title}</h3>
                     </div>
                     <ul className={styles.list}>
-                        {korusWay.points.map((point, index) => (
+                        {preonusWay.points.map((point, index) => (
                             <li key={index} className={`${styles.item} ${styles['item--positive']}`}>
                                 <div className={styles.icon}>
                                     <CheckCircleIcon />
