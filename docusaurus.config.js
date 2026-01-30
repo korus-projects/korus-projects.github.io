@@ -3,16 +3,16 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const lastUpdated = new Date().toISOString();
 
 const config = {
-  title: 'Korus Framework',
+  title: 'Preonus Framework',
   tagline: 'Modern Java framework for full-stack development with zero configuration',
   favicon: 'img/logo1.png',
 
   // Deployment
-  url: 'https://korus-projects.github.io',
+  url: 'https://preonus-projects.github.io',
   baseUrl: '/',
 
-  organizationName: 'korus-projects',
-  projectName: 'korus-projects.github.io',
+  organizationName: 'preonus-projects',
+  projectName: 'preonus-projects.github.io',
 
   onBrokenLinks: 'throw',
 
@@ -42,7 +42,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/korus-projects/korus-projects.github.io/tree/main/',
+          editUrl: 'https://github.com/preonus-projects/preonus-projects.github.io/tree/main/',
           breadcrumbs: true,
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -59,14 +59,14 @@ const config = {
 
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/korus-projects/korus-projects.github.io/tree/main/',
+          editUrl: 'https://github.com/preonus-projects/preonus-projects.github.io/tree/main/',
           authorsMapPath: 'authors.yml',
           postsPerPage: 5,
           routeBasePath: 'blog',
           path: 'blog',
           sortPosts: 'descending',
 
-          blogTitle: 'Korus Framework Blog',
+          blogTitle: 'Preonus Framework Blog',
           blogDescription: 'Build-time DI, performance insights, and framework updates',
           blogSidebarTitle: 'Recent Posts',
           blogSidebarCount: 10,
@@ -79,9 +79,9 @@ const config = {
 
           feedOptions: {
             type: ['rss', 'atom', 'json'],
-            title: 'Korus Framework Blog',
+            title: 'Preonus Framework Blog',
             description: 'Java framework with build-time dependency injection - Latest updates, tutorials, and insights',
-            copyright: `Copyright © ${new Date().getFullYear()} Korus Framework. All rights reserved.`,
+            copyright: `Copyright © ${new Date().getFullYear()} Preonus Framework. All rights reserved.`,
             language: 'en',
             limit: 20,
             createFeedItems: async (params) => {
@@ -121,7 +121,7 @@ const config = {
             const items = await defaultCreateSitemapItems(rest);
 
             return items.map((item) => {
-              if (item.url === 'https://korus-projects.github.io/') {
+              if (item.url === 'https://preonus-projects.github.io/') {
                 return {...item, priority: 1.0, changefreq: 'daily'};
               }
               if (item.url.includes('/docs/')) {
@@ -214,17 +214,17 @@ const config = {
           "url": "https://github.com/Vin-it-9",
           "image": "https://vin-it-9.github.io/portfolio/img/profile.jpg",
           "jobTitle": "Framework Architect",
-          "description": "Software Engineer specializing in Java Development, Build-time Dependency Injection, and Enterprise Java Solutions. Creator of Korus Framework.",
+          "description": "Software Engineer specializing in Java Development, Build-time Dependency Injection, and Enterprise Java Solutions. Creator of Preonus Framework.",
           "worksFor": {
             "@type": "Organization",
-            "name": "Korus Projects",
-            "url": "https://korus-projects.github.io",
-            "logo": "https://korus-projects.github.io/img/logo.png"
+            "name": "Preonus Projects",
+            "url": "https://preonus-projects.github.io",
+            "logo": "https://preonus-projects.github.io/img/logo.png"
           },
           "sameAs": [
-            "https://github.com/korus-projects",
-            "https://github.com/korus-projects/korus-projects.github.io",
-            "https://www.linkedin.com/company/korus-framework/",
+            "https://github.com/preonus-projects",
+            "https://github.com/preonus-projects/preonus-projects.github.io",
+            "https://www.linkedin.com/company/preonus-framework/",
             "https://github.com/Vin-it-9",
             "https://portfolio-vin-it-9s-projects.vercel.app/",
             "https://vin-it-9.github.io/portfolio/",
@@ -242,7 +242,7 @@ const config = {
             "Microservices Architecture",
             "RESTful API Development",
             "Software Architecture Design",
-            "Korus Framework",
+            "Preonus Framework",
             "Undertow Web Server",
             "Jandex Indexing",
             "Maven Build Tools",
@@ -251,20 +251,20 @@ const config = {
             "Quarkus Framework"
           ],
           "award": [
-            "Creator of Korus Framework - Modern Java Build-time DI Framework"
+            "Creator of Preonus Framework - Modern Java Build-time DI Framework"
           ],
           "nationality": "IN",
-          "disambiguatingDescription": "Software engineer and framework architect who created the Korus Framework, a modern Java framework with build-time dependency injection and zero reflection."
+          "disambiguatingDescription": "Software engineer and framework architect who created the Preonus Framework, a modern Java framework with build-time dependency injection and zero reflection."
         },
-        // SoftwareApplication Object - Korus Framework
+        // SoftwareApplication Object - Preonus Framework
         {
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          "name": "Korus Framework",
-          "@id": "https://korus-projects.github.io/#software",
-          "alternateName": ["Korus", "Korus Java Framework", "Korus JVM Framework", "Korus Framework", "Korus-projects"],
+          "name": "Preonus Framework",
+          "@id": "https://preonus-projects.github.io/#software",
+          "alternateName": ["Preonus", "Preonus Java Framework", "Preonus JVM Framework", "Preonus Framework", "Preonus-projects"],
           "description": "Modern Java framework with build-time dependency injection, zero reflection, and sub-200ms startup. Micronaut/Quarkus alternative with AOT compilation, Undertow web server, and Jandex-based component scanning.",
-          "abstract": "Korus is a next-generation Java framework that performs dependency injection at compile-time rather than runtime, eliminating reflection overhead and achieving ultra-fast startup times under 200ms.",
+          "abstract": "Preonus is a next-generation Java framework that performs dependency injection at compile-time rather than runtime, eliminating reflection overhead and achieving ultra-fast startup times under 200ms.",
           "softwareVersion": "1.0.0",
           "datePublished": "2025-12-01",
           "dateModified": new Date().toISOString().split('T')[0],
@@ -290,15 +290,15 @@ const config = {
           ],
           "publisher": {
             "@type": "Organization",
-            "name": "Korus Projects",
-            "url": "https://korus-projects.github.io",
+            "name": "Preonus Projects",
+            "url": "https://preonus-projects.github.io",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://korus-projects.github.io/img/logo.png"
+              "url": "https://preonus-projects.github.io/img/logo.png"
             },
             "sameAs": [
-              "https://github.com/korus-projects",
-              "https://www.linkedin.com/company/korus-framework/"
+              "https://github.com/preonus-projects",
+              "https://www.linkedin.com/company/preonus-framework/"
             ]
           },
           "about": [
@@ -331,19 +331,19 @@ const config = {
           },
 
           "sameAs": [
-            "https://github.com/korus-projects",
-            "https://github.com/korus-projects/korus-projects.github.io",
-            "https://www.linkedin.com/company/korus-framework/",
+            "https://github.com/preonus-projects",
+            "https://github.com/preonus-projects/preonus-projects.github.io",
+            "https://www.linkedin.com/company/preonus-framework/",
             "https://github.com/Vin-it-9",
             "https://portfolio-vin-it-9s-projects.vercel.app/",
             "https://vin-it-9.github.io/portfolio/",
             "https://linktr.ee/vineetshinde24",
             "https://linktr.ee/vinit_projects"
           ],
-          "url": "https://korus-projects.github.io",
+          "url": "https://preonus-projects.github.io",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "url": "https://korus-projects.github.io"
+            "url": "https://preonus-projects.github.io"
           },
           "applicationCategory": "DeveloperApplication",
           "applicationSubCategory": "Dependency Injection Framework",
@@ -354,12 +354,12 @@ const config = {
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
           },
-          "releaseNotes": "https://korus-projects.github.io/blog",
+          "releaseNotes": "https://preonus-projects.github.io/blog",
           "isFamilyFriendly": true,
-          "image": "https://korus-projects.github.io/img/logo1.png",
-          "screenshot": "https://korus-projects.github.io/img/logo1.png",
+          "image": "https://preonus-projects.github.io/img/logo1.png",
+          "screenshot": "https://preonus-projects.github.io/img/logo1.png",
           "license": "https://opensource.org/licenses/Apache-2.0",
-          "codeRepository": "https://github.com/korus-projects",
+          "codeRepository": "https://github.com/preonus-projects",
           "programmingLanguage": {
             "@type": "ComputerLanguage",
             "name": "Java",
@@ -367,10 +367,10 @@ const config = {
           },
           "runtimePlatform": "JVM (Java Virtual Machine)",
           "keywords": [
-            "Korus",
-            "Korus Framework",
-            "Korus Java Framework",
-            "Korus JVM Framework",
+            "Preonus",
+            "Preonus Framework",
+            "Preonus Java Framework",
+            "Preonus JVM Framework",
             "Java Framework",
             "Build-time Dependency Injection",
             "Build-time DI",
@@ -415,8 +415,8 @@ const config = {
             "REST API Development",
             "Enterprise-grade Performance"
           ],
-          "downloadUrl": "https://github.com/korus-projects/korus-projects.github.io/releases",
-          "installUrl": "https://korus-projects.github.io/docs/intro",
+          "downloadUrl": "https://github.com/preonus-projects/preonus-projects.github.io/releases",
+          "installUrl": "https://preonus-projects.github.io/docs/intro",
           "review": [
             {
               "@type": "Review",
@@ -425,7 +425,7 @@ const config = {
                 "name": "Java Developer Community"
               },
               "datePublished": "2025-12-01",
-              "reviewBody": "Korus Framework delivers exceptional build-time dependency injection with zero reflection overhead. The sub-200ms startup time is impressive for enterprise Java applications.",
+              "reviewBody": "Preonus Framework delivers exceptional build-time dependency injection with zero reflection overhead. The sub-200ms startup time is impressive for enterprise Java applications.",
               "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "5",
@@ -454,7 +454,7 @@ const config = {
           "softwareRequirements": "Java 25 or higher, Maven 3.6+",
           "softwareHelp": {
             "@type": "CreativeWork",
-            "url": "https://korus-projects.github.io/docs"
+            "url": "https://preonus-projects.github.io/docs"
           },
           "maintainer": {
             "@type": "Person",
@@ -482,44 +482,44 @@ const config = {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://korus-projects.github.io"
+              "item": "https://preonus-projects.github.io"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Documentation",
-              "item": "https://korus-projects.github.io/docs"
+              "item": "https://preonus-projects.github.io/docs"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Blog",
-              "item": "https://korus-projects.github.io/blog"
+              "item": "https://preonus-projects.github.io/blog"
             }
           ]
         },
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "@id": "https://korus-projects.github.io/#website",
-          "url": "https://korus-projects.github.io",
-          "name": "Korus Framework",
+          "@id": "https://preonus-projects.github.io/#website",
+          "url": "https://preonus-projects.github.io",
+          "name": "Preonus Framework",
           "publisher": {
-            "@id": "https://korus-projects.github.io/#organization"
+            "@id": "https://preonus-projects.github.io/#organization"
           },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://korus-projects.github.io/search?q={search_term_string}",
+            "target": "https://preonus-projects.github.io/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "@id": "https://korus-projects.github.io/#organization",
-          "name": "Korus Framework",
-          "url": "https://korus-projects.github.io",
-          "logo": "https://korus-projects.github.io/img/logo.png",
+          "@id": "https://preonus-projects.github.io/#organization",
+          "name": "Preonus Framework",
+          "url": "https://preonus-projects.github.io",
+          "logo": "https://preonus-projects.github.io/img/logo.png",
           "foundingDate": "2025",
           "founder": {
             "@type": "Person",
@@ -528,11 +528,11 @@ const config = {
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "Technical Support",
-            "url": "https://github.com/korus-projects/korus-projects.github.io/issues"
+            "url": "https://github.com/preonus-projects/preonus-projects.github.io/issues"
           },
           "sameAs": [
-            "https://github.com/korus-projects",
-            "https://www.linkedin.com/company/korus-framework/"
+            "https://github.com/preonus-projects",
+            "https://www.linkedin.com/company/preonus-framework/"
           ]
         }
       ])
@@ -546,8 +546,8 @@ const config = {
     // SEO metadata and social tags
     metadata: [
       // Basic SEO
-      { name: 'keywords', content: 'Korus, Korus Framework, Korus Java Framework, Korus JVM Framework, Java framework, Dependency Injection, Build-time DI, Compile-time DI, AOT Java, Ahead-of-Time Compilation, Zero Reflection, No Reflection Framework, Undertow, Undertow Web Server, Jandex, Jandex Indexing, Micronaut alternative, Quarkus alternative, Spring Boot alternative, Spring Alternative, Fast Java framework, Sub-200ms startup, Ultra-fast startup, Java compiler plugins, Annotation Processing, Java Annotation Processing, Enterprise Java, Enterprise Java Framework, Microservices Framework, Java Microservices, RESTful API Framework, Backend Framework, Modern Java Framework, Next-Generation Java, Lightweight Java Framework, High-Performance Java, Java 25, Java 25 Framework, Maven Plugin, Full-stack Java' },
-      { name: 'description', content: 'Korus Framework — Ultra-fast Java framework with build-time dependency injection, zero reflection, pre-generated DI graph, and sub-200ms startup time. Modern alternative to Spring, Micronaut, and Quarkus with AOT compilation and Undertow runtime.' },
+      { name: 'keywords', content: 'Preonus, Preonus Framework, Preonus Java Framework, Preonus JVM Framework, Java framework, Dependency Injection, Build-time DI, Compile-time DI, AOT Java, Ahead-of-Time Compilation, Zero Reflection, No Reflection Framework, Undertow, Undertow Web Server, Jandex, Jandex Indexing, Micronaut alternative, Quarkus alternative, Spring Boot alternative, Spring Alternative, Fast Java framework, Sub-200ms startup, Ultra-fast startup, Java compiler plugins, Annotation Processing, Java Annotation Processing, Enterprise Java, Enterprise Java Framework, Microservices Framework, Java Microservices, RESTful API Framework, Backend Framework, Modern Java Framework, Next-Generation Java, Lightweight Java Framework, High-Performance Java, Java 25, Java 25 Framework, Maven Plugin, Full-stack Java' },
+      { name: 'description', content: 'Preonus Framework — Ultra-fast Java framework with build-time dependency injection, zero reflection, pre-generated DI graph, and sub-200ms startup time. Modern alternative to Spring, Micronaut, and Quarkus with AOT compilation and Undertow runtime.' },
       { name: 'author', content: 'Vinit Shinde' },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'googlebot', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
@@ -557,41 +557,41 @@ const config = {
       { name: 'creator', content: 'Vinit Shinde' },
 
       // Canonical & Language
-      { name: 'canonical', content: 'https://korus-projects.github.io/' },
-      { rel: 'canonical', href: 'https://korus-projects.github.io/' },
+      { name: 'canonical', content: 'https://preonus-projects.github.io/' },
+      { rel: 'canonical', href: 'https://preonus-projects.github.io/' },
 
       // Language alternatives (add more as you translate)
-      { rel: 'alternate', hreflang: 'en', href: 'https://korus-projects.github.io/' },
-      { rel: 'alternate', hreflang: 'x-default', href: 'https://korus-projects.github.io/' },
+      { rel: 'alternate', hreflang: 'en', href: 'https://preonus-projects.github.io/' },
+      { rel: 'alternate', hreflang: 'x-default', href: 'https://preonus-projects.github.io/' },
 
       // Open Graph (Facebook, Discord, LinkedIn)
-      { property: 'og:title', content: 'Korus Framework — Ultra-Fast Java Build-Time DI' },
+      { property: 'og:title', content: 'Preonus Framework — Ultra-Fast Java Build-Time DI' },
       { property: 'og:description', content: 'Zero reflection • Build-time dependency injection • Undertow runtime • 120–250ms startup • Modern Java framework for the future. Alternative to Spring, Micronaut, and Quarkus.' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://korus-projects.github.io/img/korus-social-card.png' },
-      { property: 'og:image:alt', content: 'Korus Framework — Ultra-fast Java build-time DI framework' },
+      { property: 'og:image', content: 'https://preonus-projects.github.io/img/preonus-social-card.png' },
+      { property: 'og:image:alt', content: 'Preonus Framework — Ultra-fast Java build-time DI framework' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
-      { property: 'og:url', content: 'https://korus-projects.github.io' },
-      { property: 'og:site_name', content: 'Korus Framework' },
+      { property: 'og:url', content: 'https://preonus-projects.github.io' },
+      { property: 'og:site_name', content: 'Preonus Framework' },
       { property: 'og:locale', content: 'en_US' },
       { property: 'og:updated_time', content: lastUpdated },
-      { property: 'og:see_also', content: 'https://github.com/korus-projects' },
-      { property: 'og:see_also', content: 'https://www.linkedin.com/company/korus-framework/' },
+      { property: 'og:see_also', content: 'https://github.com/preonus-projects' },
+      { property: 'og:see_also', content: 'https://www.linkedin.com/company/preonus-framework/' },
       { property: 'article:author', content: 'Vinit Shinde' },
       { property: 'article:section', content: 'Technology' },
       { property: 'article:tag', content: 'Java Framework' },
-      { property: 'linkedin:owner', content: 'company/korus-framework' },
+      { property: 'linkedin:owner', content: 'company/preonus-framework' },
 
 
       // Twitter Cards
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Korus Build-Time DI Java Framework' },
+      { name: 'twitter:title', content: 'Preonus Build-Time DI Java Framework' },
       { name: 'twitter:description', content: 'A next-generation Java framework powered by build-time DI, Jandex indexing and zero reflection. Sub-200ms startup for enterprise applications.' },
-      { name: 'twitter:image', content: 'https://korus-projects.github.io/img/korus-social-card.png' },
+      { name: 'twitter:image', content: 'https://preonus-projects.github.io/img/preonus-social-card.png' },
       { name: 'twitter:creator', content: '@Vinit_Shinde_' },
       { name: 'twitter:site', content: '@Vinit_Shinde_' },
-      { name: 'twitter:domain', content: 'korus-projects.github.io' },
+      { name: 'twitter:domain', content: 'preonus-projects.github.io' },
       { name: 'twitter:label1', content: 'Framework Type' },
       { name: 'twitter:data1', content: 'Build-time DI' },
       { name: 'twitter:label2', content: 'Startup Time' },
@@ -602,7 +602,7 @@ const config = {
       { name: 'mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
-      { name: 'apple-mobile-web-app-title', content: 'Korus Framework' },
+      { name: 'apple-mobile-web-app-title', content: 'Preonus Framework' },
 
       // Performance & Caching
       { httpEquiv: 'Cache-Control', content: 'public, max-age=31536000, immutable' },
@@ -612,7 +612,7 @@ const config = {
       { rel: 'dns-prefetch', href: 'https://github.com' },
 
       // AI Crawlers & Search Engines
-      { name: 'ai-content', content: 'This site documents Korus Framework — a Java build-time DI engine with zero reflection, AOT compilation, and sub-200ms startup time.' },
+      { name: 'ai-content', content: 'This site documents Preonus Framework — a Java build-time DI engine with zero reflection, AOT compilation, and sub-200ms startup time.' },
       { name: 'search-engine', content: 'AI-enabled' },
       { name: 'coverage', content: 'Worldwide' },
       { name: 'distribution', content: 'Global' },
@@ -633,32 +633,32 @@ const config = {
       { property: 'product:category', content: 'Software Development Tools' },
 
       // Schema.org hints
-      { name: 'application-name', content: 'Korus Framework Documentation' },
+      { name: 'application-name', content: 'Preonus Framework Documentation' },
       { name: 'category', content: 'Software Development, Backend Development, Java Development, Microservices, Cloud Computing, Framework Engineering, API Development, System Design, Distributed Systems, DevOps, Application Architecture, Enterprise Software, JVM Ecosystem, Full Stack Development, RESTful Services, Event-Driven Architecture, CI/CD, Software Engineering Practices, Platform Engineering, Open Source Software, High-Performance Computing, Scalability Engineering, Security Engineering, Application Deployment'},
     ],
 
 
     // Announcement bar
     announcementBar: {
-      id: 'korus_announcement_v1',
+      id: 'preonus_announcement_v1',
       content:
-          '⭐️ Korus Framework is now live! ' +
-          'Join the community on <a href="https://github.com/korus-projects" target="_blank" rel="noopener noreferrer">GitHub</a> 🚀',
+          '⭐️ Preonus Framework is now live! ' +
+          'Join the community on <a href="https://github.com/preonus-projects" target="_blank" rel="noopener noreferrer">GitHub</a> 🚀',
       isCloseable: true,
     },
 
     navbar: {
-      title: 'Korus',
+      title: 'Preonus',
       hideOnScroll: true,
       logo: {
-        alt: 'Korus Logo',
+        alt: 'Preonus Logo',
         src: 'img/logo.png',
       },
       items: [
         {type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Docs'},
         {to: '/blog', label: 'Blog', position: 'left'},
-        {href: 'https://github.com/korus-projects', label: 'GitHub', position: 'right'},
-        {href: 'https://www.linkedin.com/company/korus-framework/', label: 'LinkedIn', position: 'right'},
+        {href: 'https://github.com/preonus-projects', label: 'GitHub', position: 'right'},
+        {href: 'https://www.linkedin.com/company/preonus-framework/', label: 'LinkedIn', position: 'right'},
       ],
     },
 
@@ -670,24 +670,24 @@ const config = {
           items: [
             {label: 'Getting Started', to: '/docs/intro'},
             {label: 'Tutorial', to: '/docs/intro'},
-            {label: 'API Reference', href: 'https://github.com/korus-projects'},
+            {label: 'API Reference', href: 'https://github.com/preonus-projects'},
           ],
         },
         {
           title: 'Community',
           items: [
-            {label: 'GitHub', href: 'https://github.com/korus-projects'},
-            {label: 'LinkedIn', href: 'https://www.linkedin.com/company/korus-framework/'},
-            {label: 'Discussions', href: 'https://github.com/korus-projects/korus-projects.github.io/discussions'},
+            {label: 'GitHub', href: 'https://github.com/preonus-projects'},
+            {label: 'LinkedIn', href: 'https://www.linkedin.com/company/preonus-framework/'},
+            {label: 'Discussions', href: 'https://github.com/preonus-projects/preonus-projects.github.io/discussions'},
           ],
         },
         {
           title: 'Resources',
           items: [
             {label: 'Blog', to: '/blog'},
-            {label: 'Roadmap', href: 'https://github.com/korus-projects/korus-projects.github.io/milestones'},
-            {label: 'Contributing', href: 'https://github.com/korus-projects/korus-projects.github.io/blob/main/CONTRIBUTING.md'},
-            {label: 'Issues', href: 'https://github.com/korus-projects/korus-projects.github.io/issues'},
+            {label: 'Roadmap', href: 'https://github.com/preonus-projects/preonus-projects.github.io/milestones'},
+            {label: 'Contributing', href: 'https://github.com/preonus-projects/preonus-projects.github.io/blob/main/CONTRIBUTING.md'},
+            {label: 'Issues', href: 'https://github.com/preonus-projects/preonus-projects.github.io/issues'},
           ],
         },
       ],
