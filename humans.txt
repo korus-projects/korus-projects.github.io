@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Creator & Lead Developer: Vinit Shinde
+    Site: https://github.com/Vin-it-9
+    Location: India
+
+# THANKS
+
+    Java Community
+    Open Source Contributors
+    GitHub
+
+# TECHNOLOGY COLOPHON
+
+    Framework: Preonus Framework
+    Documentation: Docusaurus 3.9
+    Hosting: GitHub Pages
+    Languages: Java, JavaScript, React
+    Build Tool: Maven
+    Web Server: Vert.x
+    Standards: HTML5, CSS3, ES2020+
+    Analytics: Google Analytics

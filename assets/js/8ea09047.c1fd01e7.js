@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpreonus_site=globalThis.webpackChunkpreonus_site||[]).push([[9385],{600:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/blog/page/2","page":2,"postsPerPage":5,"totalPages":2,"totalCount":6,"previousPage":"/blog","blogDescription":"Build-time DI, performance insights, and framework updates","blogTitle":"Preonus Framework Blog"}}')}}]);

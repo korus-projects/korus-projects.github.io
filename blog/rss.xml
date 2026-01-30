@@ -4,17 +4,69 @@
         <title>Preonus Framework Blog</title>
         <link>https://preonus-projects.github.io/blog</link>
         <description>Java framework with build-time dependency injection - Latest updates, tutorials, and insights</description>
-        <lastBuildDate>Thu, 25 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Preonus Framework. All rights reserved.</copyright>
         <item>
+            <title><![CDATA[From Korus to Preonus: The Story Behind Our Name]]></title>
+            <link>https://preonus-projects.github.io/blog/from-korus-to-preonus</link>
+            <guid>https://preonus-projects.github.io/blog/from-korus-to-preonus</guid>
+            <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover why we renamed our framework from Korus to Preonus, and the meaning behind the new name rooted in particle physics and Latin.]]></description>
+            <content:encoded><![CDATA[<p>Today, I'm excited to share the story of our framework's evolution—not just in code, but in identity. What began as <strong>Korus</strong> has transformed into <strong>Preonus</strong>, a name that better reflects our mission and philosophy.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-the-change">Why the Change?<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#why-the-change" class="hash-link" aria-label="Direct link to Why the Change?" title="Direct link to Why the Change?" translate="no">​</a></h2>
+<p>As the framework matured, it became clear that we needed a name that captured its fundamental nature: breaking down complexity to its most basic, powerful elements. We wanted something that embodied the idea of <strong>fundamental building blocks</strong>—the foundation upon which everything else is constructed.</p>
+<p>That's when we discovered the perfect fit: <strong>Preonus</strong>.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="the-meaning-behind-preonus">The Meaning Behind Preonus<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#the-meaning-behind-preonus" class="hash-link" aria-label="Direct link to The Meaning Behind Preonus" title="Direct link to The Meaning Behind Preonus" translate="no">​</a></h2>
+<p><strong>Preonus</strong> is a portmanteau with deep scientific and linguistic roots:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="preon--the-ultimate-building-block"><strong>Preon</strong> — The Ultimate Building Block<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#preon--the-ultimate-building-block" class="hash-link" aria-label="Direct link to preon--the-ultimate-building-block" title="Direct link to preon--the-ultimate-building-block" translate="no">​</a></h3>
+<p>In particle physics, <strong>preons</strong> are hypothetical subatomic, point-like particles proposed in the 1970s as the fundamental constituents of quarks and leptons. While quarks and leptons were once considered the most basic particles, preon theory suggests there might be an even deeper layer—an ultimate foundation from which everything is built.</p>
+<p>This perfectly mirrors our framework's philosophy:</p>
+<ul>
+<li class=""><strong>Fundamental</strong> — Everything reduces to the simplest, most essential components</li>
+<li class=""><strong>Point-like precision</strong> — No bloat, no unnecessary abstraction</li>
+<li class=""><strong>Building blocks</strong> — The foundation upon which complex systems are constructed</li>
+<li class=""><strong>Compile-time over runtime</strong> — Resolve everything at the deepest level, before execution</li>
+</ul>
+<p>Just as preons (if they exist) would be the ultimate constituents of matter, Preonus aims to be the ultimate foundation for Java applications—stripped down to pure compile-time logic with zero runtime magic.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="us--together-in-purpose"><strong>Us</strong> — Together in Purpose<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#us--together-in-purpose" class="hash-link" aria-label="Direct link to us--together-in-purpose" title="Direct link to us--together-in-purpose" translate="no">​</a></h3>
+<p>The suffix <strong>"us"</strong> comes from Latin, often denoting:</p>
+<ul>
+<li class=""><strong>Collective unity</strong> — A framework that brings components together</li>
+<li class=""><strong>Belonging</strong> — A community of developers building with the same philosophy</li>
+<li class=""><strong>Plurality</strong> — Many parts working as one cohesive whole</li>
+</ul>
+<p>In Latin grammar, "-us" is a common noun ending that conveys substance and completeness. Combined with "Preon," it creates a name that feels both scientific and human.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="the-philosophy-lives-on">The Philosophy Lives On<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#the-philosophy-lives-on" class="hash-link" aria-label="Direct link to The Philosophy Lives On" title="Direct link to The Philosophy Lives On" translate="no">​</a></h2>
+<p>At its core, Preonus is about:</p>
+<ul>
+<li class=""><strong>Fundamentals first</strong> — Build on the strongest possible foundation</li>
+<li class=""><strong>Compile-time everything</strong> — Resolve complexity before runtime</li>
+<li class=""><strong>Zero magic</strong> — Transparent, deterministic behavior</li>
+<li class=""><strong>Maximum performance</strong> — Remove every unnecessary layer</li>
+</ul>
+<p>The name <strong>Preonus</strong> embodies this perfectly. It's a framework built on the idea that <strong>great software starts with fundamental building blocks</strong>, assembled with precision at compile time.</p>
+<hr>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="join-us">Join Us<a href="https://preonus-projects.github.io/blog/from-korus-to-preonus#join-us" class="hash-link" aria-label="Direct link to Join Us" title="Direct link to Join Us" translate="no">​</a></h2>
+<p>Whether you knew us as Korus or are just discovering Preonus, we're excited to have you on this journey.</p>
+<p>The name has changed, but our mission remains: to build the fastest, most transparent Java framework—one that treats <strong>compile-time as the ultimate building block</strong> for modern applications.</p>
+<p>👉 <strong>GitHub:</strong> <a href="https://github.com/preonus-projects/" target="_blank" rel="noopener noreferrer" class="">https://github.com/preonus-projects/</a></p>
+<p>Welcome to Preonus. Let's build something fundamental together.</p>]]></content:encoded>
+            <category>preonus</category>
+            <category>announcement</category>
+            <category>branding</category>
+            <category>name change</category>
+        </item>
+        <item>
             <title><![CDATA[Switching Baseline to Java 25]]></title>
             <link>https://preonus-projects.github.io/blog/switch-to-java-25</link>
             <guid>https://preonus-projects.github.io/blog/switch-to-java-25</guid>
             <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[We are updating our project baseline to Java 25 to leverage the latest JVM innovations and native performance.]]></description>
+            <description><![CDATA[Preonus now requires Java 25. See how we leverage the Class-File API, Compact Object Headers, and Stable Values to deliver the fastest Java framework performance yet.]]></description>
             <content:encoded><![CDATA[<p>To build the fastest dependency injection framework for the modern era, we need tools that match that ambition. Today, we are announcing that our project is moving its minimum requirement to <strong>Java 25</strong>.</p>
 <p>While many projects still use Java 17, we found that staying on older versions forced us to use "hacks" and heavy third-party libraries that slowed down the development and performance of the framework.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-not-stay-on-java-17">Why not stay on Java 17?<a href="https://preonus-projects.github.io/blog/switch-to-java-25#why-not-stay-on-java-17" class="hash-link" aria-label="Direct link to Why not stay on Java 17?" title="Direct link to Why not stay on Java 17?" translate="no">​</a></h2>
@@ -42,7 +94,7 @@
             <link>https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus</link>
             <guid>https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus</guid>
             <pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[How I started programming, why I built the Preonus Java Framework, and my vision for Preonus.]]></description>
+            <description><![CDATA[Vinit Shinde shares his journey from learning Java to building Preonus Framework—a modern tool designed to solve the startup time and memory challenges of traditional Java.]]></description>
             <content:encoded><![CDATA[<p>Hello everyone! I’m <strong>Vinit Shinde</strong> from <strong>Pune</strong>, currently in my <strong>final year at PICT</strong>. This blog is a small part of my story as a developer and the journey that eventually led to the creation of the <strong>Preonus Java Framework</strong>.</p>
 <h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-everything-started">How Everything Started<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#how-everything-started" class="hash-link" aria-label="Direct link to How Everything Started" title="Direct link to How Everything Started" translate="no">​</a></h2>
 <p>Right after completing my 12th, I directly jumped into programming. I didn’t explore multiple languages—I started straight with <strong>Java</strong>, and that became my world.</p>
@@ -246,7 +298,7 @@
             <link>https://preonus-projects.github.io/blog/build-time-dependency-injection-explained</link>
             <guid>https://preonus-projects.github.io/blog/build-time-dependency-injection-explained</guid>
             <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[How Preonus generates your DI graph at compile time and eliminates reflection completely.]]></description>
+            <description><![CDATA[Learn how Preonus generates dependency injection graphs at compile time, eliminating runtime reflection and proxies to deliver instant startup and minimal memory footprint.]]></description>
             <content:encoded><![CDATA[<p>Most Java frameworks use <strong>runtime DI</strong>, where objects are created and wired when the application starts.<br>
 This works — but it's slow, unpredictable, and memory-heavy.</p>
 <p>Preonus takes a different approach:</p>
@@ -300,7 +352,7 @@ No classpath scanning.</p>
             <link>https://preonus-projects.github.io/blog/introducing-preonus-framework</link>
             <guid>https://preonus-projects.github.io/blog/introducing-preonus-framework</guid>
             <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[A new ultra-fast Java framework powered by build-time dependency injection and zero reflection.]]></description>
+            <description><![CDATA[Discover Preonus Framework: The new ultra-fast Java framework with build-time dependency injection, zero reflection, and sub-200ms startup for modern cloud-native apps.]]></description>
             <content:encoded><![CDATA[<p><strong>Build-Time Dependency Injection for Ultra-Fast Java Applications</strong></p>
 <p>Preonus Framework is a modern Java framework designed around one core idea:</p>
 <h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="move-everything-possible-to-compile-time"><strong>Move everything possible to compile time.</strong><a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#move-everything-possible-to-compile-time" class="hash-link" aria-label="Direct link to move-everything-possible-to-compile-time" title="Direct link to move-everything-possible-to-compile-time" translate="no">​</a></h3>
