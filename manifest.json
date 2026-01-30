@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Korus Framework",
-  "short_name": "Korus Docs",
-  "description": "Korus Framework — Java framework powered by build-time dependency injection and zero reflection. Documentation and guides for getting started, API reference, and blog.",
+  "name": "Preonus Framework",
+  "short_name": "Preonus Docs",
+  "description": "Preonus Framework — Java framework powered by build-time dependency injection and zero reflection. Documentation and guides for getting started, API reference, and blog.",
   "lang": "en-US",
   "dir": "ltr",
   "start_url": "/",
@@ -51,20 +51,20 @@
       "src": "/img/logo1.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "label": "Korus Docs — Desktop / Hero"
+      "label": "Preonus Docs — Desktop / Hero"
     },
     {
       "src": "/img/logo1.png",
       "sizes": "720x1280",
       "type": "image/png",
-      "label": "Korus Docs — Mobile / Hero"
+      "label": "Preonus Docs — Mobile / Hero"
     }
   ],
   "shortcuts": [
     {
       "name": "Open Docs",
       "short_name": "Docs",
-      "description": "Go to Korus documentation",
+      "description": "Go to Preonus documentation",
       "url": "/docs/intro",
       "icons": [
         {
@@ -77,7 +77,7 @@
     {
       "name": "Quick Start",
       "short_name": "Start",
-      "description": "Read the Korus quick start guide",
+      "description": "Read the Preonus quick start guide",
       "url": "/docs/getting-started/introduction",
       "icons": [
         {
@@ -90,7 +90,7 @@
     {
       "name": "Open Blog",
       "short_name": "Blog",
-      "description": "Read Korus articles",
+      "description": "Read Preonus articles",
       "url": "/blog",
       "icons": [
         {

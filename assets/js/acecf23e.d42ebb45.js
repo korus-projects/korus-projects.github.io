@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkpreonus_site=globalThis.webpackChunkpreonus_site||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Preonus Framework Blog","authorsListPath":"/blog/authors"}')}}]);

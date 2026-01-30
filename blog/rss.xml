@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Korus Framework Blog</title>
-        <link>https://korus-projects.github.io/blog</link>
+        <title>Preonus Framework Blog</title>
+        <link>https://preonus-projects.github.io/blog</link>
         <description>Java framework with build-time dependency injection - Latest updates, tutorials, and insights</description>
         <lastBuildDate>Thu, 25 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <copyright>Copyright © 2025 Korus Framework. All rights reserved.</copyright>
+        <copyright>Copyright © 2026 Preonus Framework. All rights reserved.</copyright>
         <item>
             <title><![CDATA[Switching Baseline to Java 25]]></title>
-            <link>https://korus-projects.github.io/blog/switch-to-java-25</link>
-            <guid>https://korus-projects.github.io/blog/switch-to-java-25</guid>
+            <link>https://preonus-projects.github.io/blog/switch-to-java-25</link>
+            <guid>https://preonus-projects.github.io/blog/switch-to-java-25</guid>
             <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[We are updating our project baseline to Java 25 to leverage the latest JVM innovations and native performance.]]></description>
             <content:encoded><![CDATA[<p>To build the fastest dependency injection framework for the modern era, we need tools that match that ambition. Today, we are announcing that our project is moving its minimum requirement to <strong>Java 25</strong>.</p>
 <p>While many projects still use Java 17, we found that staying on older versions forced us to use "hacks" and heavy third-party libraries that slowed down the development and performance of the framework.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-not-stay-on-java-17">Why not stay on Java 17?<a href="https://korus-projects.github.io/blog/switch-to-java-25#why-not-stay-on-java-17" class="hash-link" aria-label="Direct link to Why not stay on Java 17?" title="Direct link to Why not stay on Java 17?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-not-stay-on-java-17">Why not stay on Java 17?<a href="https://preonus-projects.github.io/blog/switch-to-java-25#why-not-stay-on-java-17" class="hash-link" aria-label="Direct link to Why not stay on Java 17?" title="Direct link to Why not stay on Java 17?" translate="no">​</a></h2>
 <p>Java 17 was a great milestone, but for modern framework development, it lacks the native power available in the latest releases. Sticking to a Java 17 baseline would mean:</p>
 <ul>
 <li class=""><strong>Heavy Dependencies:</strong> We would be forced to keep using external libraries like ASM or ByteBuddy for bytecode manipulation. Java 25 provides this natively.</li>
 <li class=""><strong>More Boilerplate:</strong> Java 17 lacks the advanced Pattern Matching and Record features that make our internal code clean and high-performing.</li>
 <li class=""><strong>Slower Startup:</strong> Java 17 doesn't support the new "Compact Object Headers" or the refined Virtual Thread stability that makes modern applications scale effortlessly.</li>
 </ul>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="what-makes-java-25-better-for-this-framework">What makes Java 25 better for this Framework?<a href="https://korus-projects.github.io/blog/switch-to-java-25#what-makes-java-25-better-for-this-framework" class="hash-link" aria-label="Direct link to What makes Java 25 better for this Framework?" title="Direct link to What makes Java 25 better for this Framework?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="what-makes-java-25-better-for-this-framework">What makes Java 25 better for this Framework?<a href="https://preonus-projects.github.io/blog/switch-to-java-25#what-makes-java-25-better-for-this-framework" class="hash-link" aria-label="Direct link to What makes Java 25 better for this Framework?" title="Direct link to What makes Java 25 better for this Framework?" translate="no">​</a></h2>
 <p>By switching to Java 25, we have unlocked three major "superpowers" that improve every application built with our tools:</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="1-the-native-class-file-api">1. The Native Class-File API<a href="https://korus-projects.github.io/blog/switch-to-java-25#1-the-native-class-file-api" class="hash-link" aria-label="Direct link to 1. The Native Class-File API" title="Direct link to 1. The Native Class-File API" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="1-the-native-class-file-api">1. The Native Class-File API<a href="https://preonus-projects.github.io/blog/switch-to-java-25#1-the-native-class-file-api" class="hash-link" aria-label="Direct link to 1. The Native Class-File API" title="Direct link to 1. The Native Class-File API" translate="no">​</a></h3>
 <p>In Java 17, reading or generating a class file required a third-party library. In Java 25, we use the <strong>Standard Class-File API</strong>. This makes our build-time processing smaller, faster, and much more stable across different environments.</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="2-compact-object-headers">2. Compact Object Headers<a href="https://korus-projects.github.io/blog/switch-to-java-25#2-compact-object-headers" class="hash-link" aria-label="Direct link to 2. Compact Object Headers" title="Direct link to 2. Compact Object Headers" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="2-compact-object-headers">2. Compact Object Headers<a href="https://preonus-projects.github.io/blog/switch-to-java-25#2-compact-object-headers" class="hash-link" aria-label="Direct link to 2. Compact Object Headers" title="Direct link to 2. Compact Object Headers" translate="no">​</a></h3>
 <p>Java 25 introduces <strong>Compact Object Headers</strong>, which reduce the memory footprint of every single object. For a framework that manages thousands of components, this translates to a <strong>significant reduction in heap memory</strong> usage automatically.</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="3-stable-values">3. Stable Values<a href="https://korus-projects.github.io/blog/switch-to-java-25#3-stable-values" class="hash-link" aria-label="Direct link to 3. Stable Values" title="Direct link to 3. Stable Values" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="3-stable-values">3. Stable Values<a href="https://preonus-projects.github.io/blog/switch-to-java-25#3-stable-values" class="hash-link" aria-label="Direct link to 3. Stable Values" title="Direct link to 3. Stable Values" translate="no">​</a></h3>
 <p>We now leverage the new <strong>Stable Values API</strong>. This tells the JVM that once a dependency is injected, it will <em>never</em> change. This allows the JIT compiler to optimize your code as if you used <code>static final</code> constants, making your application run at peak hardware speed.</p>
 <p><strong>We are building for the next 10 years of Java, not the last 10.</strong></p>]]></content:encoded>
             <category>java-25</category>
@@ -38,17 +38,17 @@
             <category>updates</category>
         </item>
         <item>
-            <title><![CDATA[My Journey into Java and the Story Behind Korus]]></title>
-            <link>https://korus-projects.github.io/blog/my-journey-into-java-and-korus</link>
-            <guid>https://korus-projects.github.io/blog/my-journey-into-java-and-korus</guid>
+            <title><![CDATA[My Journey into Java and the Story Behind Preonus]]></title>
+            <link>https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus</link>
+            <guid>https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus</guid>
             <pubDate>Sun, 07 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[How I started programming, why I built the Korus Java Framework, and my vision for Korus.]]></description>
-            <content:encoded><![CDATA[<p>Hello everyone! I’m <strong>Vinit Shinde</strong> from <strong>Pune</strong>, currently in my <strong>final year at PICT</strong>. This blog is a small part of my story as a developer and the journey that eventually led to the creation of the <strong>Korus Java Framework</strong>.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-everything-started">How Everything Started<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#how-everything-started" class="hash-link" aria-label="Direct link to How Everything Started" title="Direct link to How Everything Started" translate="no">​</a></h2>
+            <description><![CDATA[How I started programming, why I built the Preonus Java Framework, and my vision for Preonus.]]></description>
+            <content:encoded><![CDATA[<p>Hello everyone! I’m <strong>Vinit Shinde</strong> from <strong>Pune</strong>, currently in my <strong>final year at PICT</strong>. This blog is a small part of my story as a developer and the journey that eventually led to the creation of the <strong>Preonus Java Framework</strong>.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-everything-started">How Everything Started<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#how-everything-started" class="hash-link" aria-label="Direct link to How Everything Started" title="Direct link to How Everything Started" translate="no">​</a></h2>
 <p>Right after completing my 12th, I directly jumped into programming. I didn’t explore multiple languages—I started straight with <strong>Java</strong>, and that became my world.</p>
 <p>The biggest influence behind my entry into programming was <strong>my cousins</strong>. They guided me, motivated me, and pushed me toward Java when I didn’t even fully understand what programming actually was.</p>
 <p>Looking back, choosing Java as my first language was one of the best decisions I’ve ever made.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="growing-with-java">Growing with Java<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#growing-with-java" class="hash-link" aria-label="Direct link to Growing with Java" title="Direct link to Growing with Java" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="growing-with-java">Growing with Java<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#growing-with-java" class="hash-link" aria-label="Direct link to Growing with Java" title="Direct link to Growing with Java" translate="no">​</a></h2>
 <p>As I got deeper into the language, I began to explore:</p>
 <ul>
 <li class="">Modern Java frameworks</li>
@@ -61,7 +61,7 @@
 <p><strong>"Yes, I can build real engineering systems."</strong></p>
 </blockquote>
 <p>Since then, I’ve built over <strong>50+ public GitHub repositories</strong>, constantly improving my skills and learning everything from the ground up.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-created-korus">Why I Created Korus<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#why-i-created-korus" class="hash-link" aria-label="Direct link to Why I Created Korus" title="Direct link to Why I Created Korus" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-created-preonus">Why I Created Preonus<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#why-i-created-preonus" class="hash-link" aria-label="Direct link to Why I Created Preonus" title="Direct link to Why I Created Preonus" translate="no">​</a></h2>
 <p>India has a massive developer ecosystem, especially around Java, but one thing always felt missing:</p>
 <blockquote>
 <p><strong>We didn’t have our own Java framework.</strong></p>
@@ -70,16 +70,16 @@
 <blockquote>
 <p>"If something doesn’t exist, I will build it myself."</p>
 </blockquote>
-<p>That’s how <strong>Korus</strong> started.</p>
-<p>Korus is my attempt to bring something fresh, fast, and developer-friendly to the Java world, built with a strong vision and the belief that Indian developers can create world-class open-source tools.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="vision-for-the-future">Vision for the Future<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#vision-for-the-future" class="hash-link" aria-label="Direct link to Vision for the Future" title="Direct link to Vision for the Future" translate="no">​</a></h2>
+<p>That’s how <strong>Preonus</strong> started.</p>
+<p>Preonus is my attempt to bring something fresh, fast, and developer-friendly to the Java world, built with a strong vision and the belief that Indian developers can create world-class open-source tools.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="vision-for-the-future">Vision for the Future<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#vision-for-the-future" class="hash-link" aria-label="Direct link to Vision for the Future" title="Direct link to Vision for the Future" translate="no">​</a></h2>
 <p>My dream is simple:</p>
 <blockquote>
-<p><strong>In the next 5 years, Korus should become one of the top Java frameworks in the world.</strong></p>
+<p><strong>In the next 5 years, Preonus should become one of the top Java frameworks in the world.</strong></p>
 </blockquote>
 <p>Not just another project—but something developers love, trust, and use confidently.</p>
 <p>This is just the beginning.</p>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-words">Final Words<a href="https://korus-projects.github.io/blog/my-journey-into-java-and-korus#final-words" class="hash-link" aria-label="Direct link to Final Words" title="Direct link to Final Words" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-words">Final Words<a href="https://preonus-projects.github.io/blog/my-journey-into-java-and-preonus#final-words" class="hash-link" aria-label="Direct link to Final Words" title="Direct link to Final Words" translate="no">​</a></h2>
 <p>If you're reading this:</p>
 <ul>
 <li class="">Start early</li>
@@ -87,20 +87,20 @@
 <li class="">Build fearlessly</li>
 </ul>
 <p>You don’t need a perfect background or perfect conditions. You just need passion, discipline, and the courage to start.</p>
-<p>Thank you for reading. This journey has shaped me as a developer, and Korus is the biggest step of that journey. The best part is still ahead.</p>]]></content:encoded>
+<p>Thank you for reading. This journey has shaped me as a developer, and Preonus is the biggest step of that journey. The best part is still ahead.</p>]]></content:encoded>
             <category>java</category>
-            <category>korus</category>
+            <category>preonus</category>
             <category>journey</category>
         </item>
         <item>
-            <title><![CDATA[Korus vs Spring Boot vs Micronaut vs Quarkus]]></title>
-            <link>https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus</link>
-            <guid>https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus</guid>
+            <title><![CDATA[Preonus vs Spring Boot vs Micronaut vs Quarkus]]></title>
+            <link>https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus</link>
+            <guid>https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus</guid>
             <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A practical comparison of modern Java frameworks — startup time, memory, DI model, and architecture.]]></description>
             <content:encoded><![CDATA[<p>Let’s compare the most popular modern Java frameworks.</p>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="startup-time-comparison">Startup Time Comparison<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#startup-time-comparison" class="hash-link" aria-label="Direct link to Startup Time Comparison" title="Direct link to Startup Time Comparison" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="startup-time-comparison">Startup Time Comparison<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#startup-time-comparison" class="hash-link" aria-label="Direct link to Startup Time Comparison" title="Direct link to Startup Time Comparison" translate="no">​</a></h2>
 
 
 
@@ -126,9 +126,9 @@
 
 
 
-<table><thead><tr><th>Framework</th><th>Startup Time</th></tr></thead><tbody><tr><td>Spring Boot</td><td>1500–2500ms</td></tr><tr><td>Micronaut</td><td>600–1200ms</td></tr><tr><td>Quarkus</td><td>800–1500ms</td></tr><tr><td><strong>Korus</strong></td><td><strong>120–250ms</strong></td></tr></tbody></table>
+<table><thead><tr><th>Framework</th><th>Startup Time</th></tr></thead><tbody><tr><td>Spring Boot</td><td>1500–2500ms</td></tr><tr><td>Micronaut</td><td>600–1200ms</td></tr><tr><td>Quarkus</td><td>800–1500ms</td></tr><tr><td><strong>Preonus</strong></td><td><strong>120–250ms</strong></td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="dependency-injection-model">Dependency Injection Model<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#dependency-injection-model" class="hash-link" aria-label="Direct link to Dependency Injection Model" title="Direct link to Dependency Injection Model" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="dependency-injection-model">Dependency Injection Model<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#dependency-injection-model" class="hash-link" aria-label="Direct link to Dependency Injection Model" title="Direct link to Dependency Injection Model" translate="no">​</a></h2>
 
 
 
@@ -164,28 +164,28 @@
 
 
 
-<table><thead><tr><th>Framework</th><th>DI Style</th><th>Reflection?</th><th>Compile-Time?</th></tr></thead><tbody><tr><td>Spring Boot</td><td>Runtime DI</td><td>Yes</td><td>Partial</td></tr><tr><td>Micronaut</td><td>Compile-Time DI</td><td>No</td><td>Yes</td></tr><tr><td>Quarkus</td><td>Build-Time DI</td><td>Some</td><td>Mostly</td></tr><tr><td><strong>Korus</strong></td><td><strong>Build-Time DI</strong></td><td><strong>Some</strong></td><td><strong>Mostly</strong></td></tr></tbody></table>
+<table><thead><tr><th>Framework</th><th>DI Style</th><th>Reflection?</th><th>Compile-Time?</th></tr></thead><tbody><tr><td>Spring Boot</td><td>Runtime DI</td><td>Yes</td><td>Partial</td></tr><tr><td>Micronaut</td><td>Compile-Time DI</td><td>No</td><td>Yes</td></tr><tr><td>Quarkus</td><td>Build-Time DI</td><td>Some</td><td>Mostly</td></tr><tr><td><strong>Preonus</strong></td><td><strong>Build-Time DI</strong></td><td><strong>Some</strong></td><td><strong>Mostly</strong></td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-differences">Architecture Differences<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#architecture-differences" class="hash-link" aria-label="Direct link to Architecture Differences" title="Direct link to Architecture Differences" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="spring-boot">Spring Boot<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#spring-boot" class="hash-link" aria-label="Direct link to Spring Boot" title="Direct link to Spring Boot" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-differences">Architecture Differences<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#architecture-differences" class="hash-link" aria-label="Direct link to Architecture Differences" title="Direct link to Architecture Differences" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="spring-boot">Spring Boot<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#spring-boot" class="hash-link" aria-label="Direct link to Spring Boot" title="Direct link to Spring Boot" translate="no">​</a></h3>
 <ul>
 <li class="">Heavy runtime logic</li>
 <li class="">Massive ecosystem</li>
 <li class="">Easiest to use</li>
 </ul>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="micronaut">Micronaut<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#micronaut" class="hash-link" aria-label="Direct link to Micronaut" title="Direct link to Micronaut" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="micronaut">Micronaut<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#micronaut" class="hash-link" aria-label="Direct link to Micronaut" title="Direct link to Micronaut" translate="no">​</a></h3>
 <ul>
 <li class="">Build-time friendly</li>
 <li class="">Faster than Spring</li>
 <li class="">Requires extra modules</li>
 </ul>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="quarkus">Quarkus<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#quarkus" class="hash-link" aria-label="Direct link to Quarkus" title="Direct link to Quarkus" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="quarkus">Quarkus<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#quarkus" class="hash-link" aria-label="Direct link to Quarkus" title="Direct link to Quarkus" translate="no">​</a></h3>
 <ul>
 <li class="">GraalVM optimized</li>
 <li class="">Build-time profiling</li>
 <li class="">Complex stack</li>
 </ul>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="korus">Korus<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#korus" class="hash-link" aria-label="Direct link to Korus" title="Direct link to Korus" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="preonus">Preonus<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#preonus" class="hash-link" aria-label="Direct link to Preonus" title="Direct link to Preonus" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>Simpler than Micronaut/Quarkus</strong></li>
 <li class=""><strong>Faster than all of them</strong></li>
@@ -193,7 +193,7 @@
 <li class=""><strong>Clean Undertow runtime</strong></li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="when-to-choose-which">When to choose which?<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#when-to-choose-which" class="hash-link" aria-label="Direct link to When to choose which?" title="Direct link to When to choose which?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="when-to-choose-which">When to choose which?<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#when-to-choose-which" class="hash-link" aria-label="Direct link to When to choose which?" title="Direct link to When to choose which?" translate="no">​</a></h2>
 
 
 
@@ -223,18 +223,18 @@
 
 
 
-<table><thead><tr><th>Use Case</th><th>Best Choice</th></tr></thead><tbody><tr><td>Enterprise backend</td><td>Spring Boot</td></tr><tr><td>Serverless</td><td>Korus / Quarkus</td></tr><tr><td>Microservices</td><td>Korus / Micronaut</td></tr><tr><td>CLI apps</td><td>Korus</td></tr><tr><td>AOT native images</td><td>Korus / Quarkus</td></tr></tbody></table>
+<table><thead><tr><th>Use Case</th><th>Best Choice</th></tr></thead><tbody><tr><td>Enterprise backend</td><td>Spring Boot</td></tr><tr><td>Serverless</td><td>Preonus / Quarkus</td></tr><tr><td>Microservices</td><td>Preonus / Micronaut</td></tr><tr><td>CLI apps</td><td>Preonus</td></tr><tr><td>AOT native images</td><td>Preonus / Quarkus</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-verdict">Final Verdict<a href="https://korus-projects.github.io/blog/korus-vs-spring-micronaut-quarkus#final-verdict" class="hash-link" aria-label="Direct link to Final Verdict" title="Direct link to Final Verdict" translate="no">​</a></h2>
-<p>Korus is ideal when you want:</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="final-verdict">Final Verdict<a href="https://preonus-projects.github.io/blog/preonus-vs-spring-micronaut-quarkus#final-verdict" class="hash-link" aria-label="Direct link to Final Verdict" title="Direct link to Final Verdict" translate="no">​</a></h2>
+<p>Preonus is ideal when you want:</p>
 <ul>
 <li class="">Fast startup</li>
 <li class="">Low memory usage</li>
 <li class="">Deterministic DI</li>
 <li class="">Zero reflection runtime</li>
 </ul>
-<p>Korus stands as a <strong>next-generation framework</strong> built for modern Java workloads.</p>]]></content:encoded>
-            <category>korus</category>
+<p>Preonus stands as a <strong>next-generation framework</strong> built for modern Java workloads.</p>]]></content:encoded>
+            <category>preonus</category>
             <category>java</category>
             <category>comparison</category>
             <category>quarkus</category>
@@ -243,13 +243,13 @@
         </item>
         <item>
             <title><![CDATA[Build-Time Dependency Injection Explained]]></title>
-            <link>https://korus-projects.github.io/blog/build-time-dependency-injection-explained</link>
-            <guid>https://korus-projects.github.io/blog/build-time-dependency-injection-explained</guid>
+            <link>https://preonus-projects.github.io/blog/build-time-dependency-injection-explained</link>
+            <guid>https://preonus-projects.github.io/blog/build-time-dependency-injection-explained</guid>
             <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[How Korus generates your DI graph at compile time and eliminates reflection completely.]]></description>
+            <description><![CDATA[How Preonus generates your DI graph at compile time and eliminates reflection completely.]]></description>
             <content:encoded><![CDATA[<p>Most Java frameworks use <strong>runtime DI</strong>, where objects are created and wired when the application starts.<br>
 This works — but it's slow, unpredictable, and memory-heavy.</p>
-<p>Korus takes a different approach:</p>
+<p>Preonus takes a different approach:</p>
 <blockquote>
 <p><strong>All dependency injection is generated at compile time.</strong></p>
 </blockquote>
@@ -257,20 +257,20 @@ This works — but it's slow, unpredictable, and memory-heavy.</p>
 No proxies.<br>
 No classpath scanning.</p>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-build-time-di">Why Build-Time DI?<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#why-build-time-di" class="hash-link" aria-label="Direct link to Why Build-Time DI?" title="Direct link to Why Build-Time DI?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-build-time-di">Why Build-Time DI?<a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#why-build-time-di" class="hash-link" aria-label="Direct link to Why Build-Time DI?" title="Direct link to Why Build-Time DI?" translate="no">​</a></h2>
 <p>Build-time DI solves three major problems:</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="slow-startup"><strong>Slow Startup</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#slow-startup" class="hash-link" aria-label="Direct link to slow-startup" title="Direct link to slow-startup" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="slow-startup"><strong>Slow Startup</strong><a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#slow-startup" class="hash-link" aria-label="Direct link to slow-startup" title="Direct link to slow-startup" translate="no">​</a></h3>
 <p>Runtime DI frameworks scan the classpath and perform reflection when the app boots.</p>
-<p>Korus eliminates this entirely.</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="hidden-runtime-errors"><strong>Hidden Runtime Errors</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#hidden-runtime-errors" class="hash-link" aria-label="Direct link to hidden-runtime-errors" title="Direct link to hidden-runtime-errors" translate="no">​</a></h3>
+<p>Preonus eliminates this entirely.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="hidden-runtime-errors"><strong>Hidden Runtime Errors</strong><a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#hidden-runtime-errors" class="hash-link" aria-label="Direct link to hidden-runtime-errors" title="Direct link to hidden-runtime-errors" translate="no">​</a></h3>
 <p>Many DI issues (circular dependencies, missing beans) are discovered only when you run the app.</p>
-<p>Korus validates the entire DI graph <em>at compile time</em>.</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="large-memory-footprint"><strong>Large Memory Footprint</strong><a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#large-memory-footprint" class="hash-link" aria-label="Direct link to large-memory-footprint" title="Direct link to large-memory-footprint" translate="no">​</a></h3>
+<p>Preonus validates the entire DI graph <em>at compile time</em>.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="large-memory-footprint"><strong>Large Memory Footprint</strong><a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#large-memory-footprint" class="hash-link" aria-label="Direct link to large-memory-footprint" title="Direct link to large-memory-footprint" translate="no">​</a></h3>
 <p>Reflection metadata, runtime registries, proxies — all reduce performance.</p>
-<p>Korus generates <strong>pure Java code</strong> instead.</p>
+<p>Preonus generates <strong>pure Java code</strong> instead.</p>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-korus-generates-the-di-graph">How Korus Generates the DI Graph<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#how-korus-generates-the-di-graph" class="hash-link" aria-label="Direct link to How Korus Generates the DI Graph" title="Direct link to How Korus Generates the DI Graph" translate="no">​</a></h2>
-<p>During compilation, the Korus processor:</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="how-preonus-generates-the-di-graph">How Preonus Generates the DI Graph<a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#how-preonus-generates-the-di-graph" class="hash-link" aria-label="Direct link to How Preonus Generates the DI Graph" title="Direct link to How Preonus Generates the DI Graph" translate="no">​</a></h2>
+<p>During compilation, the Preonus processor:</p>
 <ol>
 <li class="">Scans your source code</li>
 <li class="">Builds an internal DI model</li>
@@ -281,30 +281,30 @@ No classpath scanning.</p>
 <li class="">Method injection code</li>
 <li class="">Singleton registries</li>
 <li class="">Route metadata</li>
-<li class="">A full <code>KorusMain</code> bootstrap class</li>
+<li class="">A full <code>PreonusMain</code> bootstrap class</li>
 </ul>
 </li>
 </ol>
 <p>Everything is resolved before your application even runs.</p>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="example-generated-code-simplified">Example Generated Code (Simplified)<a href="https://korus-projects.github.io/blog/build-time-dependency-injection-explained#example-generated-code-simplified" class="hash-link" aria-label="Direct link to Example Generated Code (Simplified)" title="Direct link to Example Generated Code (Simplified)" translate="no">​</a></h2>
-<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">KorusBean</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">private</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">KorusBean</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">this</span><span class="token punctuation" style="color:rgb(212, 212, 212)">.</span><span class="token plain">repo </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain"> </span><span class="token function" style="color:rgb(220, 220, 170)">get</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">return</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token plain">repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><br></span></code></pre></div></div>]]></content:encoded>
-            <category>korus</category>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="example-generated-code-simplified">Example Generated Code (Simplified)<a href="https://preonus-projects.github.io/blog/build-time-dependency-injection-explained#example-generated-code-simplified" class="hash-link" aria-label="Direct link to Example Generated Code (Simplified)" title="Direct link to Example Generated Code (Simplified)" translate="no">​</a></h2>
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">PreonusBean</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">private</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">final</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain">$$</span><span class="token class-name" style="color:rgb(78, 201, 176)">PreonusBean</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token class-name" style="color:rgb(78, 201, 176)">UserRepository</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">this</span><span class="token punctuation" style="color:rgb(212, 212, 212)">.</span><span class="token plain">repo </span><span class="token operator" style="color:rgb(212, 212, 212)">=</span><span class="token plain"> repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token keyword" style="color:rgb(86, 156, 214)">public</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token plain"> </span><span class="token function" style="color:rgb(220, 220, 170)">get</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(212, 212, 212)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">        </span><span class="token keyword" style="color:rgb(86, 156, 214)">return</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(86, 156, 214)">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(78, 201, 176)">UserService</span><span class="token punctuation" style="color:rgb(212, 212, 212)">(</span><span class="token plain">repo</span><span class="token punctuation" style="color:rgb(212, 212, 212)">)</span><span class="token punctuation" style="color:rgb(212, 212, 212)">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><span class="token plain"></span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain"></span><span class="token punctuation" style="color:rgb(212, 212, 212)">}</span><br></span></code></pre></div></div>]]></content:encoded>
+            <category>preonus</category>
             <category>java</category>
             <category>dependency-injection</category>
             <category>build-time</category>
             <category>aot</category>
         </item>
         <item>
-            <title><![CDATA[Introducing Korus Framework]]></title>
-            <link>https://korus-projects.github.io/blog/introducing-korus-framework</link>
-            <guid>https://korus-projects.github.io/blog/introducing-korus-framework</guid>
+            <title><![CDATA[Introducing Preonus Framework]]></title>
+            <link>https://preonus-projects.github.io/blog/introducing-preonus-framework</link>
+            <guid>https://preonus-projects.github.io/blog/introducing-preonus-framework</guid>
             <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[A new ultra-fast Java framework powered by build-time dependency injection and zero reflection.]]></description>
             <content:encoded><![CDATA[<p><strong>Build-Time Dependency Injection for Ultra-Fast Java Applications</strong></p>
-<p>Korus Framework is a modern Java framework designed around one core idea:</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="move-everything-possible-to-compile-time"><strong>Move everything possible to compile time.</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#move-everything-possible-to-compile-time" class="hash-link" aria-label="Direct link to move-everything-possible-to-compile-time" title="Direct link to move-everything-possible-to-compile-time" translate="no">​</a></h3>
-<p>Reflection, classpath scanning, proxies, and runtime bean creation all slow down traditional Java frameworks. Korus eliminates all of them by generating:</p>
+<p>Preonus Framework is a modern Java framework designed around one core idea:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="move-everything-possible-to-compile-time"><strong>Move everything possible to compile time.</strong><a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#move-everything-possible-to-compile-time" class="hash-link" aria-label="Direct link to move-everything-possible-to-compile-time" title="Direct link to move-everything-possible-to-compile-time" translate="no">​</a></h3>
+<p>Reflection, classpath scanning, proxies, and runtime bean creation all slow down traditional Java frameworks. Preonus eliminates all of them by generating:</p>
 <ul>
 <li class="">Dependency wiring</li>
 <li class="">DI registries</li>
@@ -321,38 +321,38 @@ No classpath scanning.</p>
 <li class=""><strong>Lightweight Undertow runtime</strong></li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-built-korus">Why I Built Korus<a href="https://korus-projects.github.io/blog/introducing-korus-framework#why-i-built-korus" class="hash-link" aria-label="Direct link to Why I Built Korus" title="Direct link to Why I Built Korus" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-i-built-preonus">Why I Built Preonus<a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#why-i-built-preonus" class="hash-link" aria-label="Direct link to Why I Built Preonus" title="Direct link to Why I Built Preonus" translate="no">​</a></h2>
 <p>While working with Spring Boot and Micronaut, I noticed a common issue:</p>
 <blockquote>
 <p><em>Even build-time DI frameworks keep some runtime magic.</em></p>
 </blockquote>
 <p>Some still rely on reflection, some use proxies, some still scan packages.<br>
-This inspired the architecture of Korus:</p>
+This inspired the architecture of Preonus:</p>
 <ul>
 <li class="">Pure annotation processing</li>
 <li class="">Pure compile-time registry generation</li>
 <li class="">No runtime analysis</li>
 <li class="">No surprises</li>
 </ul>
-<p>Korus aims to bring:</p>
+<p>Preonus aims to bring:</p>
 <ul>
 <li class="">The <strong>developer experience of Spring</strong></li>
 <li class="">The <strong>performance of Quarkus/Micronaut</strong></li>
 <li class="">And a <strong>clean, minimal runtime</strong></li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-overview">Architecture Overview<a href="https://korus-projects.github.io/blog/introducing-korus-framework#architecture-overview" class="hash-link" aria-label="Direct link to Architecture Overview" title="Direct link to Architecture Overview" translate="no">​</a></h2>
-<p>Korus consists of <strong>two independent modules</strong>:</p>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="1-korus-processor-build-time-engine"><strong>1. Korus Processor (Build-Time Engine)</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#1-korus-processor-build-time-engine" class="hash-link" aria-label="Direct link to 1-korus-processor-build-time-engine" title="Direct link to 1-korus-processor-build-time-engine" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="architecture-overview">Architecture Overview<a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#architecture-overview" class="hash-link" aria-label="Direct link to Architecture Overview" title="Direct link to Architecture Overview" translate="no">​</a></h2>
+<p>Preonus consists of <strong>two independent modules</strong>:</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="1-preonus-processor-build-time-engine"><strong>1. Preonus Processor (Build-Time Engine)</strong><a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#1-preonus-processor-build-time-engine" class="hash-link" aria-label="Direct link to 1-preonus-processor-build-time-engine" title="Direct link to 1-preonus-processor-build-time-engine" translate="no">​</a></h3>
 <p>Responsible for:</p>
 <ul>
 <li class="">Scanning source code</li>
 <li class="">Building the DI graph</li>
 <li class="">Performing Jandex indexing</li>
 <li class="">Generating wiring and route registries</li>
-<li class="">Auto-generating <code>KorusMain</code></li>
+<li class="">Auto-generating <code>PreonusMain</code></li>
 </ul>
-<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="2-korus-framework-runtime-engine"><strong>2. Korus Framework (Runtime Engine)</strong><a href="https://korus-projects.github.io/blog/introducing-korus-framework#2-korus-framework-runtime-engine" class="hash-link" aria-label="Direct link to 2-korus-framework-runtime-engine" title="Direct link to 2-korus-framework-runtime-engine" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="2-preonus-framework-runtime-engine"><strong>2. Preonus Framework (Runtime Engine)</strong><a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#2-preonus-framework-runtime-engine" class="hash-link" aria-label="Direct link to 2-preonus-framework-runtime-engine" title="Direct link to 2-preonus-framework-runtime-engine" translate="no">​</a></h3>
 <p>A lightweight Undertow-based runtime that:</p>
 <ul>
 <li class="">Loads pre-generated classes instantly</li>
@@ -361,7 +361,7 @@ This inspired the architecture of Korus:</p>
 <li class="">Boots in under <strong>0.25 seconds</strong></li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="where-we-are-today">Where We Are Today<a href="https://korus-projects.github.io/blog/introducing-korus-framework#where-we-are-today" class="hash-link" aria-label="Direct link to Where We Are Today" title="Direct link to Where We Are Today" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="where-we-are-today">Where We Are Today<a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#where-we-are-today" class="hash-link" aria-label="Direct link to Where We Are Today" title="Direct link to Where We Are Today" translate="no">​</a></h2>
 <ul>
 <li class="">20,000+ lines of Java code</li>
 <li class="">Two-module architecture</li>
@@ -370,19 +370,19 @@ This inspired the architecture of Korus:</p>
 <li class="">Hibernate + HikariCP integration</li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="whats-next">What’s Next?<a href="https://korus-projects.github.io/blog/introducing-korus-framework#whats-next" class="hash-link" aria-label="Direct link to What’s Next?" title="Direct link to What’s Next?" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="whats-next">What’s Next?<a href="https://preonus-projects.github.io/blog/introducing-preonus-framework#whats-next" class="hash-link" aria-label="Direct link to What’s Next?" title="Direct link to What’s Next?" translate="no">​</a></h2>
 <ul>
 <li class="">Multi-module architecture (Core, Web, Data)</li>
-<li class="">Korus CLI (“korus new app”)</li>
+<li class="">Preonus CLI (“preonus new app”)</li>
 <li class="">Simpler configuration API</li>
 <li class="">New Data access module</li>
 <li class="">Build-time validation improvements</li>
 </ul>
 <hr>
-<p>Korus is now open to the Java community.<br>
+<p>Preonus is now open to the Java community.<br>
 I built it to solve real problems, and I’m excited to see what developers create with it.</p>
-<p>👉 GitHub: <strong><a href="https://github.com/korus-projects/" target="_blank" rel="noopener noreferrer" class="">https://github.com/korus-projects/</a></strong></p>]]></content:encoded>
-            <category>korus</category>
+<p>👉 GitHub: <strong><a href="https://github.com/preonus-projects/" target="_blank" rel="noopener noreferrer" class="">https://github.com/preonus-projects/</a></strong></p>]]></content:encoded>
+            <category>preonus</category>
             <category>java</category>
             <category>framework</category>
             <category>dependency-injection</category>

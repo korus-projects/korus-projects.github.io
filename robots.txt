@@ -1,6 +1,6 @@
-# Korus Framework - robots.txt
+# Preonus Framework - robots.txt
 
-Sitemap: https://korus-projects.github.io/sitemap.xml
+Sitemap: https://preonus-projects.github.io/sitemap.xml
 
 # Google Crawlers (All variants - grouped)
 User-agent: Googlebot

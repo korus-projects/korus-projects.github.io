@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkkorus_site=globalThis.webpackChunkkorus_site||[]).push([[1e3],{1e3:(e,s,a)=>{a.d(s,{createRadarServices:()=>r.f});var r=a(7846);a(7960)}}]);

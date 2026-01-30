@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkkorus_site=globalThis.webpackChunkkorus_site||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Korus Framework Blog","authorsListPath":"/blog/authors"}')}}]);
